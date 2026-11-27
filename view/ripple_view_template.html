@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RippleLens ripple view (M3 prototype)</title>
+<style>
+:root{--bg:#fff;--fg:#1d1d1f;--mut:#6b6b70;--card:#f5f5f7;--line:#c9c9ce;--hit:#2f9e5f;--miss:#d4503a;--seed:#2b5fd9;--node:#9aa0aa}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17181a;--fg:#ececee;--mut:#9a9aa2;--card:#222427;--line:#3a3d42;--hit:#46c47e;--miss:#ef7a66;--seed:#6d94ff;--node:#7d838d}}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 system-ui,Segoe UI,Arial,sans-serif;padding:12px;box-sizing:border-box}
+h1{font-size:18px;margin:0 0 4px}.sub{color:var(--mut);margin-bottom:10px}
+.row{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px;align-items:center}
+select,button{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:6px;padding:6px 10px;font:inherit}
+button.on{border-color:var(--seed);box-shadow:0 0 0 1px var(--seed) inset}
+.wrap{display:flex;gap:12px;flex-wrap:wrap}.card{background:var(--card);border-radius:8px;padding:10px}
+#svgbox{flex:2 1 460px;min-width:0;overflow-x:auto}#panel{flex:1 1 260px}
+svg{width:100%;height:auto;max-width:680px;display:block}
+text{fill:var(--fg);font-size:10.5px}.lbl{fill:var(--mut)}
+.pill{display:inline-block;border-radius:10px;padding:1px 8px;font-size:12px;border:1px solid var(--line)}
+ul{margin:4px 0 0 16px;padding:0}li{margin:2px 0;word-break:break-all}
+</style></head><body>
+<h1>RippleLens ripple view <span class="pill">M3 prototype</span></h1>
+<div class="sub">Pick a commit, choose a method, then reveal what the developers actually changed. Rankings are pre-computed (static JSON).</div>
+<div class="row"><label for="commit">Commit</label><select id="commit"></select><span id="mbtns"></span><button id="reveal">Reveal truth</button></div>
+<div class="wrap"><div id="svgbox" class="card"></div><div id="panel" class="card"></div></div>
+<script>
+var DATA = __DATA__;
+var state = {c:0, m:"Co-change", reveal:false};
+function $(id){return document.getElementById(id)}
+function base(p){return p.split("/").pop().replace(".java","")}
+function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function init(){
+  var sel=$("commit"); sel.innerHTML="";
+  DATA.forEach(function(d,i){var o=document.createElement("option");o.value=i;o.textContent=d.repo+" "+d.sha+": "+d.subject.slice(0,50);sel.appendChild(o)});
+  sel.onchange=function(){state.c=+sel.value;state.reveal=false;render()};
+  var names=Object.keys(DATA[0].methods), mb=$("mbtns"); mb.innerHTML="";
+  names.forEach(function(n){var b=document.createElement("button");b.textContent=n;b.setAttribute("data-m",n);b.onclick=function(){state.m=n;render()};mb.appendChild(b)});
+  $("reveal").onclick=function(){state.reveal=!state.reveal;render()};
+  render();
+}
+function render(){
+  var d=DATA[state.c], list=d.methods[state.m], truth=d.truth, cx=330, cy=250, i;
+  Array.prototype.forEach.call($("mbtns").children,function(b){b.className=b.getAttribute("data-m")===state.m?"on":""});
+  $("reveal").textContent=state.reveal?"Hide truth":"Reveal truth";
+  var s='<svg id="ripple" viewBox="0 0 660 500" role="img" aria-label="Ripple diagram"><circle cx="'+cx+'" cy="'+cy+'" r="120" fill="none" stroke="var(--line)" stroke-dasharray="3 4"/><circle cx="'+cx+'" cy="'+cy+'" r="195" fill="none" stroke="var(--line)" stroke-dasharray="3 4"/>';
+  var pos=list.map(function(p,k){var inner=k<5, n=inner?5:5, idx=inner?k:k-5, a=(idx/n)*2*Math.PI+(inner?-Math.PI/2:-Math.PI/2+0.3), r=inner?120:195;return {x:cx+r*Math.cos(a),y:cy+r*Math.sin(a),p:p,k:k}});
+  pos.forEach(function(q){s+='<line x1="'+cx+'" y1="'+cy+'" x2="'+q.x.toFixed(1)+'" y2="'+q.y.toFixed(1)+'" stroke="var(--line)" stroke-opacity="'+(1-q.k*0.07).toFixed(2)+'"/>'});
+  var hits=0;
+  pos.forEach(function(q){
+    var isT=truth.indexOf(q.p)>=0; if(isT)hits++;
+    var fill="var(--node)", stroke="none";
+    if(state.reveal){fill=isT?"var(--hit)":"var(--node)"; if(!isT)stroke="var(--miss)"}
+    s+='<circle class="node" data-hit="'+(isT?1:0)+'" cx="'+q.x.toFixed(1)+'" cy="'+q.y.toFixed(1)+'" r="9" fill="'+fill+'" stroke="'+(stroke==="none"?"none":stroke)+'" stroke-width="2"><title>'+esc(q.p)+'</title></circle>';
+    var right=q.x>=cx; s+='<text x="'+(q.x+(right?13:-13)).toFixed(1)+'" y="'+(q.y+4).toFixed(1)+'" text-anchor="'+(right?"start":"end")+'">'+(q.k+1)+". "+esc(base(q.p))+'</text>';
+  });
+  s+='<circle cx="'+cx+'" cy="'+cy+'" r="15" fill="var(--seed)"><title>'+esc(d.seed)+'</title></circle><text x="'+cx+'" y="'+(cy+32)+'" text-anchor="middle" style="font-weight:600">seed: '+esc(base(d.seed))+'</text></svg>';
+  $("svgbox").innerHTML=s;
+  var missed=truth.filter(function(t){return list.indexOf(t)<0});
+  var h='<div><b>'+esc(d.repo)+'</b> '+esc(d.sha)+' <span class="lbl">'+esc(d.date)+'</span></div><div>'+esc(d.subject)+'</div><div style="margin-top:6px"><span class="pill">'+esc(state.m)+'</span> top-10 predictions</div>';
+  if(state.reveal){h+='<div style="margin-top:6px"><b>'+hits+' of '+truth.length+'</b> truly changed files in the top 10 (recall@10 = '+(hits/truth.length).toFixed(2)+')</div>';
+    if(missed.length){h+='<div style="margin-top:4px">Changed but not predicted:</div><ul>'+missed.map(function(m){return '<li>'+esc(m)+'</li>'}).join("")+'</ul>'}}
+  else{h+='<div style="margin-top:6px" class="lbl">Truth is hidden. Click &ldquo;Reveal truth&rdquo; to see which predicted files the developers really changed.</div>'}
+  $("panel").innerHTML=h;
+}
+init();
+</script></body></html>

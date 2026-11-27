@@ -1,0 +1,30 @@
+{
+ "repo": "commons-compress",
+ "head_sha": "56b22afaa550cf11c2ebe2d5f7d0de1f2690a15c",
+ "head_date": "2026-11-08",
+ "total_commits": 7020,
+ "java_files_at_head": 709,
+ "split_boundary_sha": "cad72d1e10ef704bbd13c46b1ac5c1c702b05091",
+ "split_boundary_date": "2024-02-28",
+ "funnel": {
+  "non_merge_commits": 6862,
+  "test_window_commits": 2059,
+  "touch_java": 1454,
+  "size_2_15_java": 397,
+  "dropped_rename_dominated": 3,
+  "dropped_bulk_subject": 12,
+  "eligible": 382,
+  "sampled_test_commits": 300,
+  "extra_post_cutoff_commits": 14,
+  "train_commits_sampled": 400
+ },
+ "skipped_after_sampling": {
+  "fewer_than_2_pre_existing_files": 24
+ },
+ "unmapped_paths": 0,
+ "train_rows": 86234,
+ "train_positives": 1215,
+ "n_instances": 783,
+ "n_commits": 304,
+ "runtime_s": 105.1
+}

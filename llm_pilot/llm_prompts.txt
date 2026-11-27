@@ -1,0 +1,1445 @@
+### Q1 (commons-lang)
+SEED: T:lang3/reflect/TypeUtilsTest.java
+CHANGE: Fix TypeUtils.isAssignable() for wildcards with multiple upper bounds (#1782)
+CANDIDATES:
+  1. M:lang3/AnnotationUtils.java
+  2. M:lang3/ArrayUtils.java
+  3. M:lang3/SystemProperties.java
+  4. M:lang3/SystemUtils.java
+  5. M:lang3/builder/AbstractReflection.java
+  6. M:lang3/exception/UncheckedException.java
+  7. M:lang3/mutable/MutableByte.java
+  8. M:lang3/mutable/MutableInt.java
+  9. M:lang3/reflect/AccessibleObjects.java
+  10. M:lang3/reflect/FieldUtils.java
+  11. M:lang3/reflect/MethodUtils.java
+  12. M:lang3/reflect/TypeUtils.java
+  13. M:lang3/reflect/Typed.java
+  14. M:lang3/reflect/package-info.java
+  15. M:lang3/time/AbstractFormatCache.java
+  16. T:lang3/AbstractLangTest.java
+  17. T:lang3/ArrayUtilsTest.java
+  18. T:lang3/LangAssertions.java
+  19. T:lang3/ObjectUtilsTest.java
+  20. T:lang3/RandomStringUtilsTest.java
+  21. T:lang3/builder/ReflectionToStringBuilderExcludeTest.java
+  22. T:lang3/builder/ToStringBuilderTest.java
+  23. T:lang3/reflect/ConstructorUtilsTest.java
+  24. T:lang3/reflect/FieldUtilsTest.java
+  25. T:lang3/reflect/InheritanceUtilsTest.java
+  26. T:lang3/reflect/Lang1703Test.java
+  27. T:lang3/reflect/Lang1792Test.java
+  28. T:lang3/reflect/MethodUtilsAnnotationsTest.java
+  29. T:lang3/reflect/MethodUtilsTest.java
+  30. T:lang3/reflect/PublicSubBean.java
+  31. T:lang3/reflect/TypeLiteralTest.java
+  32. T:lang3/reflect/testbed/Foo.java
+  33. T:lang3/reflect/testbed/GenericParent.java
+  34. T:lang3/reflect/testbed/GenericTypeHolder.java
+  35. T:lang3/reflect/testbed/StringParameterizedChild.java
+
+### Q2 (commons-io)
+SEED: T:io/monitor/FileEntryTest.java
+CHANGE: FileEntry.setName(String) now throws NullPointerException on null input.
+CANDIDATES:
+  1. M:io/FileUtils.java
+  2. M:io/channels/FileChannels.java
+  3. M:io/comparator/SizeFileComparator.java
+  4. M:io/file/PathUtils.java
+  5. M:io/filefilter/FileEqualsFileFilter.java
+  6. M:io/filefilter/FileFileFilter.java
+  7. M:io/input/QueueInputStream.java
+  8. M:io/monitor/FileAlterationListener.java
+  9. M:io/monitor/FileAlterationListenerAdaptor.java
+  10. M:io/monitor/FileAlterationMonitor.java
+  11. M:io/monitor/FileAlterationObserver.java
+  12. M:io/monitor/FileEntry.java
+  13. M:io/monitor/SerializableFileTime.java
+  14. M:io/monitor/package-info.java
+  15. M:io/output/ClosedWriter.java
+  16. M:io/output/LockableFileWriter.java
+  17. M:io/output/ProxyCollectionWriter.java
+  18. T:io/FileUtilsTest.java
+  19. T:io/IOUtilsTest.java
+  20. T:io/file/TempDirectoryTest.java
+  21. T:io/filefilter/FileFilterTest.java
+  22. T:io/function/IOIterableTest.java
+  23. T:io/function/IOUnaryOperatorTest.java
+  24. T:io/monitor/AbstractMonitorTest.java
+  25. T:io/monitor/CollectionFileListener.java
+  26. T:io/monitor/FileAlterationMonitorTest.java
+  27. T:io/monitor/FileAlterationObserverTest.java
+  28. T:io/monitor/SerializableFileTimeTest.java
+  29. T:io/output/LockableFileWriterTest.java
+
+### Q3 (pdfbox)
+SEED: M:pdfbox|org/apache/pdfbox/contentstream/PDContentStream.java
+CHANGE: PDFBOX-4892: fix javadoc
+CANDIDATES:
+  1. M:debugger|org/apache/pdfbox/debugger/ui/DocumentEntry.java
+  2. M:examples|org/apache/pdfbox/examples/pdmodel/EmbeddedVerticalFonts.java
+  3. M:examples|org/apache/pdfbox/examples/rendering/CustomGraphicsStreamEngine.java
+  4. M:examples|org/apache/pdfbox/examples/util/RemoveAllText.java
+  5. M:io|org/apache/pdfbox/io/RandomAccessRead.java
+  6. M:pdfbox|org/apache/pdfbox/contentstream/PDFGraphicsStreamEngine.java
+  7. M:pdfbox|org/apache/pdfbox/contentstream/PDFStreamEngine.java
+  8. M:pdfbox|org/apache/pdfbox/contentstream/operator/graphics/DrawObject.java
+  9. M:pdfbox|org/apache/pdfbox/multipdf/LayerUtility.java
+  10. M:pdfbox|org/apache/pdfbox/pdfparser/PDFStreamParser.java
+  11. M:pdfbox|org/apache/pdfbox/pdmodel/PDDocument.java
+  12. M:pdfbox|org/apache/pdfbox/pdmodel/PDPage.java
+  13. M:pdfbox|org/apache/pdfbox/pdmodel/PDPageContentStream.java
+  14. M:pdfbox|org/apache/pdfbox/pdmodel/PDResources.java
+  15. M:pdfbox|org/apache/pdfbox/pdmodel/common/PDRectangle.java
+  16. M:pdfbox|org/apache/pdfbox/pdmodel/common/PDStream.java
+  17. M:pdfbox|org/apache/pdfbox/pdmodel/common/function/type4/Operator.java
+  18. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType3CharProc.java
+  19. M:pdfbox|org/apache/pdfbox/pdmodel/graphics/form/PDFormXObject.java
+  20. M:pdfbox|org/apache/pdfbox/pdmodel/graphics/pattern/PDTilingPattern.java
+  21. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/action/PDAction.java
+  22. M:pdfbox|org/apache/pdfbox/text/LegacyPDFStreamEngine.java
+  23. M:pdfbox|org/apache/pdfbox/util/Matrix.java
+  24. T:pdfbox|org/apache/pdfbox/pdmodel/TestPDPageContentStream.java
+  25. M:preflight|org/apache/pdfbox/preflight/graphic/ICCProfileWrapper.java
+  26. M:preflight|org/apache/pdfbox/preflight/process/StreamValidationProcess.java
+  27. T:preflight|org/apache/pdfbox/preflight/action/pdfa1b/TestGotoAction.java
+  28. M:xmpbox|org/apache/xmpbox/type/JobType.java
+
+### Q4 (commons-collections)
+SEED: T:collections4/list/AbstractListTest.java
+CHANGE: Return false from AbstractLinkedList addAll for an empty collection (#726)
+CANDIDATES:
+  1. M:collections4/list/AbstractSerializableListDecorator.java
+  2. M:collections4/list/FixedSizeList.java
+  3. M:collections4/list/LazyList.java
+  4. M:collections4/list/TreeList.java
+  5. M:collections4/list/UnmodifiableList.java
+  6. M:collections4/list/package-info.java
+  7. T:collections4/AbstractArrayListTest.java
+  8. T:collections4/AbstractLinkedListTest.java
+  9. T:collections4/AbstractObjectTest.java
+  10. T:collections4/BulkTest.java
+  11. T:collections4/bag/AbstractBagTest.java
+  12. T:collections4/bidimap/AbstractBidiMapTest.java
+  13. T:collections4/bidimap/AbstractOrderedBidiMapTest.java
+  14. T:collections4/collection/AbstractCollectionTest.java
+  15. T:collections4/iterators/AbstractListIteratorTest.java
+  16. T:collections4/list/Collections701Test.java
+  17. T:collections4/list/DefaultAbstractLinkedListJava21Test.java
+  18. T:collections4/list/FixedSizeListTest.java
+  19. T:collections4/list/LazyListTest.java
+  20. T:collections4/map/AbstractIterableMapTest.java
+  21. T:collections4/map/AbstractMapTest.java
+  22. T:collections4/map/LinkedMapTest.java
+  23. T:collections4/map/ListOrderedMap2Test.java
+  24. T:collections4/map/ListOrderedMapTest.java
+  25. T:collections4/multiset/AbstractMultiSetTest.java
+  26. T:collections4/properties/AbstractPropertiesFactoryTest.java
+  27. T:collections4/set/AbstractNavigableSetTest.java
+  28. T:collections4/set/AbstractSortedSetTest.java
+
+### Q5 (pdfbox)
+SEED: M:debugger|org/apache/pdfbox/debugger/ui/PDFTreeCellRenderer.java
+CHANGE: PDFBOX-5539: sonar fix
+CANDIDATES:
+  1. M:debugger|org/apache/pdfbox/debugger/PDFDebugger.java
+  2. M:debugger|org/apache/pdfbox/debugger/hexviewer/HexPane.java
+  3. M:debugger|org/apache/pdfbox/debugger/treestatus/TreeStatus.java
+  4. M:debugger|org/apache/pdfbox/debugger/ui/ArrayEntry.java
+  5. M:debugger|org/apache/pdfbox/debugger/ui/FileOpenSaveDialog.java
+  6. M:debugger|org/apache/pdfbox/debugger/ui/HighResolutionImageIcon.java
+  7. M:debugger|org/apache/pdfbox/debugger/ui/ImageTypeMenu.java
+  8. M:debugger|org/apache/pdfbox/debugger/ui/MapEntry.java
+  9. M:debugger|org/apache/pdfbox/debugger/ui/OSXAdapter.java
+  10. M:debugger|org/apache/pdfbox/debugger/ui/PDFTreeModel.java
+  11. M:debugger|org/apache/pdfbox/debugger/ui/PageEntry.java
+  12. M:debugger|org/apache/pdfbox/debugger/ui/ReaderBottomPanel.java
+  13. M:debugger|org/apache/pdfbox/debugger/ui/RecentFiles.java
+  14. M:debugger|org/apache/pdfbox/debugger/ui/RotationMenu.java
+  15. M:debugger|org/apache/pdfbox/debugger/ui/Tree.java
+  16. M:debugger|org/apache/pdfbox/debugger/ui/XrefEntries.java
+  17. M:debugger|org/apache/pdfbox/debugger/ui/ZoomMenu.java
+  18. M:fontbox|org/apache/fontbox/cmap/CMapParser.java
+  19. M:fontbox|org/apache/fontbox/ttf/CmapSubtable.java
+  20. M:fontbox|org/apache/fontbox/ttf/TTFSubsetter.java
+  21. M:pdfbox|org/apache/pdfbox/contentstream/operator/OperatorName.java
+  22. M:pdfbox|org/apache/pdfbox/cos/COSArray.java
+  23. M:pdfbox|org/apache/pdfbox/cos/COSBase.java
+  24. M:pdfbox|org/apache/pdfbox/cos/COSBoolean.java
+  25. M:pdfbox|org/apache/pdfbox/cos/COSFloat.java
+  26. M:pdfbox|org/apache/pdfbox/cos/COSInteger.java
+  27. M:pdfbox|org/apache/pdfbox/cos/COSNull.java
+  28. M:pdfbox|org/apache/pdfbox/cos/COSObject.java
+  29. M:pdfbox|org/apache/pdfbox/cos/COSStream.java
+  30. M:pdfbox|org/apache/pdfbox/cos/COSString.java
+  31. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java
+  32. M:pdfbox|org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java
+  33. M:pdfbox|org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java
+
+### Q6 (commons-collections)
+SEED: M:collections4/SplitMapUtils.java
+CHANGE: Reject remove on the Unmodifiable map from SplitMapUtils.readableMap (#718)
+CANDIDATES:
+  1. M:collections4/ArrayStack.java
+  2. M:collections4/BagUtils.java
+  3. M:collections4/BidiMap.java
+  4. M:collections4/BoundedCollection.java
+  5. M:collections4/ClosureUtils.java
+  6. M:collections4/CollectionUtils.java
+  7. M:collections4/EnumerationUtils.java
+  8. M:collections4/FactoryUtils.java
+  9. M:collections4/IterableUtils.java
+  10. M:collections4/KeyValue.java
+  11. M:collections4/ListUtils.java
+  12. M:collections4/MapUtils.java
+  13. M:collections4/MultiMapUtils.java
+  14. M:collections4/OrderedBidiMap.java
+  15. M:collections4/PredicateUtils.java
+  16. M:collections4/QueueUtils.java
+  17. M:collections4/ResettableIterator.java
+  18. M:collections4/SetUtils.java
+  19. M:collections4/TransformerUtils.java
+  20. M:collections4/collection/UnmodifiableCollection.java
+  21. M:collections4/iterators/UnmodifiableMapIterator.java
+  22. M:collections4/map/EntrySetToMapIteratorAdapter.java
+  23. M:collections4/map/UnmodifiableEntrySet.java
+  24. M:collections4/set/UnmodifiableSet.java
+  25. T:collections4/AbstractArrayListTest.java
+  26. T:collections4/CollectionUtilsTest.java
+  27. T:collections4/IterableUtilsSumSizesToIntTest.java
+  28. T:collections4/IteratorUtilsTest.java
+
+### Q7 (pdfbox)
+SEED: T:pdfbox-layout-awt|org/apache/pdfbox/glyphlayout/GlyphLayoutDin91379Test.java
+CHANGE: PDFBOX-4951: add rendering test, refactor
+CANDIDATES:
+  1. M:debugger|org/apache/pdfbox/debugger/hexviewer/HexModelChangeListener.java
+  2. M:fontbox|org/apache/fontbox/cff/CFFFont.java
+  3. M:fontbox|org/apache/fontbox/cff/DataInputRandomAccessRead.java
+  4. M:fontbox|org/apache/fontbox/ttf/CmapSubtable.java
+  5. M:fontbox|org/apache/fontbox/ttf/TTFSubsetter.java
+  6. M:pdfbox-layout-awt|org/apache/pdfbox/glyphlayout/GlyphLayoutFontLoaderAwt.java
+  7. M:pdfbox-layout-awt|org/apache/pdfbox/glyphlayout/GlyphLayoutProcessorAwt.java
+  8. T:pdfbox-layout-awt|org/apache/pdfbox/glyphlayout/GlyphLayoutBidiTest.java
+  9. T:pdfbox-layout-awt|org/apache/pdfbox/glyphlayout/GlyphLayoutDin91379FormTest.java
+  10. T:pdfbox-layout-awt|org/apache/pdfbox/glyphlayout/GlyphLayoutLigaturesAndKerningTest.java
+  11. M:pdfbox|org/apache/pdfbox/Loader.java
+  12. M:pdfbox|org/apache/pdfbox/filter/FlateFilter.java
+  13. M:pdfbox|org/apache/pdfbox/pdfparser/BaseParser.java
+  14. M:pdfbox|org/apache/pdfbox/pdfwriter/ContentStreamWriter.java
+  15. M:pdfbox|org/apache/pdfbox/pdfwriter/compress/COSWriterObjectStream.java
+  16. M:pdfbox|org/apache/pdfbox/pdmodel/ContentStreamForGlyphLayoutInterface.java
+  17. M:pdfbox|org/apache/pdfbox/pdmodel/PDDocument.java
+  18. M:pdfbox|org/apache/pdfbox/pdmodel/PDPage.java
+  19. M:pdfbox|org/apache/pdfbox/pdmodel/PDPageContentStream.java
+  20. M:pdfbox|org/apache/pdfbox/pdmodel/PDPageTree.java
+  21. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java
+  22. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType0Font.java
+  23. M:pdfbox|org/apache/pdfbox/text/PDFTextStripper.java
+  24. T:pdfbox|org/apache/pdfbox/cos/TestCOSUpdateInfo.java
+  25. M:xmpbox|org/apache/xmpbox/schema/AdobePDFSchema.java
+  26. M:xmpbox|org/apache/xmpbox/schema/XMPBasicJobTicketSchema.java
+  27. M:xmpbox|org/apache/xmpbox/schema/XMPRightsManagementSchema.java
+  28. M:xmpbox|org/apache/xmpbox/type/TextType.java
+  29. M:xmpbox|org/apache/xmpbox/xml/XmpParsingException.java
+
+### Q8 (commons-io)
+SEED: T:io/function/IOIteratorTest.java
+CHANGE: Add IOIterator.adapt(Iterable)
+CANDIDATES:
+  1. M:io/FileUtils.java
+  2. M:io/IOUtils.java
+  3. M:io/file/PathUtils.java
+  4. M:io/filefilter/MagicNumberFileFilter.java
+  5. M:io/function/Constants.java
+  6. M:io/function/Erase.java
+  7. M:io/function/IOBiConsumer.java
+  8. M:io/function/IOIterator.java
+  9. M:io/function/IOIteratorAdapter.java
+  10. M:io/function/IOQuadFunction.java
+  11. M:io/function/IOStreamAdapter.java
+  12. M:io/function/IOSupplier.java
+  13. M:io/function/UncheckedIOIterator.java
+  14. M:io/input/BrokenReader.java
+  15. M:io/input/SequenceReader.java
+  16. M:io/input/Tailer.java
+  17. T:io/IOUtilsTest.java
+  18. T:io/function/IOBiConsumerTest.java
+  19. T:io/function/IOComparatorTest.java
+  20. T:io/function/IOIntStream.java
+  21. T:io/function/IOIntStreamAdapter.java
+  22. T:io/function/IOIteratorAdapterTest.java
+  23. T:io/function/IOLongSupplierTest.java
+  24. T:io/function/IOQuadFunctionTest.java
+  25. T:io/function/IOSupplierTest.java
+  26. T:io/function/IOTriConsumerTest.java
+  27. T:io/function/IOUnaryOperatorTest.java
+  28. T:io/function/PathStream.java
+  29. T:io/function/TestConstants.java
+  30. T:io/input/AutoCloseInputStreamTest.java
+  31. T:io/output/WriterOutputStreamTest.java
+
+### Q9 (commons-collections)
+SEED: T:collections4/iterators/AbstractIteratorTest.java
+CHANGE: Javadoc
+CANDIDATES:
+  1. M:collections4/CollectionUtils.java
+  2. M:collections4/IteratorUtils.java
+  3. M:collections4/iterators/ArrayIterator.java
+  4. M:collections4/iterators/BoundedIterator.java
+  5. M:collections4/iterators/ExtendedIterator.java
+  6. M:collections4/iterators/IteratorChain.java
+  7. M:collections4/iterators/NodeListIterator.java
+  8. M:collections4/iterators/ObjectArrayListIterator.java
+  9. M:collections4/iterators/PeekingIterator.java
+  10. M:collections4/iterators/PushbackIterator.java
+  11. M:collections4/iterators/SingletonIterator.java
+  12. M:collections4/iterators/SingletonListIterator.java
+  13. M:collections4/iterators/SkippingIterator.java
+  14. M:collections4/iterators/UnmodifiableListIterator.java
+  15. T:collections4/AbstractObjectTest.java
+  16. T:collections4/ListUtilsTest.java
+  17. T:collections4/bloomfilter/AbstractCellExtractorTest.java
+  18. T:collections4/iterators/AbstractMapIteratorTest.java
+  19. T:collections4/iterators/ArrayIterator2Test.java
+  20. T:collections4/iterators/ArrayIteratorTest.java
+  21. T:collections4/iterators/CartesianProductIteratorTest.java
+  22. T:collections4/iterators/FilterIteratorTest.java
+  23. T:collections4/iterators/FilterListIteratorTest.java
+  24. T:collections4/iterators/IteratorChainTest.java
+  25. T:collections4/iterators/IteratorEnumerationTest.java
+  26. T:collections4/iterators/ListIteratorWrapperTest.java
+  27. T:collections4/iterators/NodeListIteratorTest.java
+  28. T:collections4/iterators/ObjectArrayIteratorTest.java
+  29. T:collections4/iterators/ReverseListIteratorTest.java
+  30. T:collections4/iterators/SingletonIterator2Test.java
+  31. T:collections4/iterators/SingletonIteratorTest.java
+  32. T:collections4/iterators/SingletonListIteratorTest.java
+  33. T:collections4/iterators/UniqueFilterIteratorTest.java
+  34. T:collections4/iterators/ZippingIteratorTest.java
+  35. T:collections4/list/AbstractListTest.java
+
+### Q10 (commons-compress)
+SEED: M:compress/archivers/lha/LhaArchiveInputStream.java
+CHANGE: Sort members
+CANDIDATES:
+  1. M:compress/archivers/ArchiveStreamProvider.java
+  2. M:compress/archivers/ar/ArArchiveInputStream.java
+  3. M:compress/archivers/cpio/CpioArchiveInputStream.java
+  4. M:compress/archivers/cpio/CpioArchiveOutputStream.java
+  5. M:compress/archivers/lha/LhaArchiveEntry.java
+  6. M:compress/archivers/lha/package-info.java
+  7. M:compress/archivers/tar/TarArchiveInputStream.java
+  8. M:compress/archivers/tar/TarArchiveOutputStream.java
+  9. M:compress/archivers/zip/AsiExtraField.java
+  10. M:compress/archivers/zip/ExtraFieldUtils.java
+  11. M:compress/archivers/zip/ZipUtil.java
+  12. M:compress/compressors/lha/Lh4CompressorInputStream.java
+  13. M:compress/compressors/lha/Lh5CompressorInputStream.java
+  14. M:compress/compressors/lha/Lh6CompressorInputStream.java
+  15. M:compress/compressors/lha/Lh7CompressorInputStream.java
+  16. M:compress/compressors/lha/package-info.java
+  17. M:compress/harmony/pack200/PopulationCodec.java
+  18. M:compress/parallel/InputStreamSupplier.java
+  19. T:compress/archivers/ArchiveStreamFactoryTest.java
+  20. T:compress/archivers/dump/Compress712Test.java
+  21. T:compress/archivers/lha/LhaArchiveEntryTest.java
+  22. T:compress/archivers/lha/LhaArchiveInputStreamTest.java
+  23. T:compress/archivers/zip/SeekableChannelRandomAccessOutputStreamTest.java
+  24. T:compress/compressors/gzip/SubFieldTest.java
+  25. T:compress/compressors/lha/AbstractLhStaticHuffmanCompressorInputStreamTest.java
+  26. T:compress/compressors/lha/BinaryTreeTest.java
+  27. T:compress/compressors/lha/CircularBufferTest.java
+  28. T:compress/compressors/lha/Lh4CompressorInputStreamTest.java
+  29. T:compress/compressors/lha/Lh5CompressorInputStreamTest.java
+  30. T:compress/compressors/lha/Lh6CompressorInputStreamTest.java
+  31. T:compress/compressors/lha/Lh7CompressorInputStreamTest.java
+
+### Q11 (pdfbox)
+SEED: M:pdfbox|org/apache/pdfbox/cos/COSName.java
+CHANGE: PDFBOX-6256: introduce ActualText feature to layout processor, by Volker Kunert; closes #526
+CANDIDATES:
+  1. M:debugger|org/apache/pdfbox/debugger/flagbitspane/FieldFlag.java
+  2. M:pdfbox|org/apache/pdfbox/cos/COSArray.java
+  3. M:pdfbox|org/apache/pdfbox/cos/COSDictionary.java
+  4. M:pdfbox|org/apache/pdfbox/cos/COSDocument.java
+  5. M:pdfbox|org/apache/pdfbox/cos/COSInputStream.java
+  6. M:pdfbox|org/apache/pdfbox/cos/COSInteger.java
+  7. M:pdfbox|org/apache/pdfbox/cos/COSObjectKey.java
+  8. M:pdfbox|org/apache/pdfbox/cos/COSUpdateState.java
+  9. M:pdfbox|org/apache/pdfbox/cos/ICOSParser.java
+  10. M:pdfbox|org/apache/pdfbox/filter/CCITTFaxFilter.java
+  11. M:pdfbox|org/apache/pdfbox/filter/LZWFilter.java
+  12. M:pdfbox|org/apache/pdfbox/pdfwriter/COSWriter.java
+  13. M:pdfbox|org/apache/pdfbox/pdmodel/PDAbstractContentStream.java
+  14. M:pdfbox|org/apache/pdfbox/pdmodel/PDDocument.java
+  15. M:pdfbox|org/apache/pdfbox/pdmodel/PDResources.java
+  16. M:pdfbox|org/apache/pdfbox/pdmodel/common/PDStream.java
+  17. M:pdfbox|org/apache/pdfbox/pdmodel/common/PDTypedDictionaryWrapper.java
+  18. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java
+  19. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFileAttachment.java
+  20. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationHighlight.java
+  21. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationSound.java
+  22. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationSquiggly.java
+  23. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationStrikeOut.java
+  24. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationUnderline.java
+  25. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDFont.java
+  26. M:pdfbox|org/apache/pdfbox/pdmodel/font/encoding/MacExpertEncoding.java
+  27. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java
+  28. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValueTimeStamp.java
+  29. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/form/PDVariableText.java
+  30. T:pdfbox|org/apache/pdfbox/cos/COSDictionaryTest.java
+  31. T:pdfbox|org/apache/pdfbox/cos/COSObjectKeyTest.java
+  32. T:pdfbox|org/apache/pdfbox/cos/TestCOSFloat.java
+  33. T:pdfbox|org/apache/pdfbox/cos/TestCOSString.java
+  34. T:pdfbox|org/apache/pdfbox/cos/TestCOSUpdateInfo.java
+  35. T:pdfbox|org/apache/pdfbox/pdmodel/interactive/action/PDActionURITest.java
+  36. T:pdfbox|org/apache/pdfbox/pdmodel/interactive/annotation/PDCircleAnnotationTest.java
+
+### Q12 (commons-compress)
+SEED: M:compress/compressors/snappy/SnappyCompressorOutputStream.java
+CHANGE: Javadoc
+CANDIDATES:
+  1. M:compress/compressors/CompressorOutputStream.java
+  2. M:compress/compressors/bzip2/BZip2CompressorOutputStream.java
+  3. M:compress/compressors/deflate/DeflateCompressorOutputStream.java
+  4. M:compress/compressors/gzip/GzipCompressorOutputStream.java
+  5. M:compress/compressors/lz4/BlockLZ4CompressorOutputStream.java
+  6. M:compress/compressors/lz4/FramedLZ4CompressorInputStream.java
+  7. M:compress/compressors/lz4/FramedLZ4CompressorOutputStream.java
+  8. M:compress/compressors/lz77support/LZ77Compressor.java
+  9. M:compress/compressors/lz77support/Parameters.java
+  10. M:compress/compressors/pack200/Pack200CompressorOutputStream.java
+  11. M:compress/compressors/snappy/FramedSnappyCompressorInputStream.java
+  12. M:compress/compressors/snappy/FramedSnappyCompressorOutputStream.java
+  13. M:compress/compressors/snappy/FramedSnappyDialect.java
+  14. M:compress/compressors/snappy/SnappyCompressorInputStream.java
+  15. M:compress/compressors/snappy/package-info.java
+  16. M:compress/compressors/xz/XZCompressorOutputStream.java
+  17. M:compress/compressors/zstandard/ZstdCompressorOutputStream.java
+  18. M:compress/utils/ByteUtils.java
+  19. T:compress/archivers/zip/X000A_NTFSTest.java
+  20. T:compress/archivers/zip/ZipSplitOutputStreamTest.java
+  21. T:compress/compressors/bzip2/BZip2CompressorInputStreamTest.java
+  22. T:compress/compressors/lz4/BlockLZ4CompressorOutputStreamTest.java
+  23. T:compress/compressors/snappy/FramedSnappyCompressorInputStreamTest.java
+  24. T:compress/compressors/snappy/SnappyRoundtripTest.java
+  25. T:compress/utils/ByteUtilsTest.java
+
+### Q13 (commons-compress)
+SEED: M:compress/harmony/pack200/BandSet.java
+CHANGE: Javadoc
+CANDIDATES:
+  1. M:compress/archivers/zip/ZipLong.java
+  2. M:compress/harmony/pack200/Archive.java
+  3. M:compress/harmony/pack200/AttributeDefinitionBands.java
+  4. M:compress/harmony/pack200/BcBands.java
+  5. M:compress/harmony/pack200/CPClass.java
+  6. M:compress/harmony/pack200/CPConstant.java
+  7. M:compress/harmony/pack200/CPFloat.java
+  8. M:compress/harmony/pack200/CPInt.java
+  9. M:compress/harmony/pack200/CPLong.java
+  10. M:compress/harmony/pack200/CPNameAndType.java
+  11. M:compress/harmony/pack200/CPSignature.java
+  12. M:compress/harmony/pack200/CPString.java
+  13. M:compress/harmony/pack200/CanonicalCodecFamilies.java
+  14. M:compress/harmony/pack200/ClassBands.java
+  15. M:compress/harmony/pack200/CodecEncoding.java
+  16. M:compress/harmony/pack200/ConstantPoolEntry.java
+  17. M:compress/harmony/pack200/IntList.java
+  18. M:compress/harmony/pack200/MetadataBandGroup.java
+  19. M:compress/harmony/pack200/NewAttribute.java
+  20. M:compress/harmony/pack200/NewAttributeBands.java
+  21. M:compress/harmony/pack200/Pack200Adapter.java
+  22. M:compress/harmony/pack200/Pack200ClassReader.java
+  23. M:compress/harmony/pack200/PackingOptions.java
+  24. M:compress/harmony/pack200/PackingUtils.java
+  25. M:compress/harmony/pack200/PopulationCodec.java
+  26. M:compress/harmony/pack200/Segment.java
+  27. M:compress/harmony/pack200/SegmentHeader.java
+  28. M:compress/harmony/pack200/package-info.java
+  29. M:compress/harmony/unpack200/BandSet.java
+  30. M:compress/harmony/unpack200/ClassBands.java
+  31. T:compress/archivers/zip/ZipArchiveInputStreamTest.java
+  32. T:compress/harmony/pack200/CodecTest.java
+  33. T:compress/harmony/pack200/RunCodecTest.java
+  34. T:compress/harmony/unpack200/BandSetTest.java
+
+### Q14 (commons-compress)
+SEED: T:compress/harmony/unpack200/BandSetTest.java
+CHANGE: Reject out-of-range indices in pack200 BandSet.getReferences (#788)
+CANDIDATES:
+  1. M:compress/harmony/pack200/BHSDCodec.java
+  2. M:compress/harmony/pack200/Codec.java
+  3. M:compress/harmony/pack200/Pack200Exception.java
+  4. M:compress/harmony/unpack200/Archive.java
+  5. M:compress/harmony/unpack200/AttributeLayoutMap.java
+  6. M:compress/harmony/unpack200/BandSet.java
+  7. M:compress/harmony/unpack200/BcBands.java
+  8. M:compress/harmony/unpack200/ClassBands.java
+  9. M:compress/harmony/unpack200/CpBands.java
+  10. M:compress/harmony/unpack200/FileBands.java
+  11. M:compress/harmony/unpack200/MetadataBandGroup.java
+  12. M:compress/harmony/unpack200/SegmentOptions.java
+  13. M:compress/harmony/unpack200/package-info.java
+  14. T:compress/harmony/unpack200/AbstractBandsTest.java
+  15. T:compress/harmony/unpack200/ArchiveTest.java
+  16. T:compress/harmony/unpack200/AttributeLayoutMapTest.java
+  17. T:compress/harmony/unpack200/AttributeLayoutTest.java
+  18. T:compress/harmony/unpack200/BcBandsTest.java
+  19. T:compress/harmony/unpack200/ClassBandsTest.java
+  20. T:compress/harmony/unpack200/CodeAttributeTest.java
+  21. T:compress/harmony/unpack200/ICTupleTest.java
+  22. T:compress/harmony/unpack200/NewAttributeBandsTest.java
+  23. T:compress/harmony/unpack200/SegmentConstantPoolTest.java
+  24. T:compress/harmony/unpack200/SegmentOptionsTest.java
+  25. T:compress/harmony/unpack200/SegmentTest.java
+  26. T:compress/harmony/unpack200/SegmentUtilsTest.java
+  27. T:compress/harmony/unpack200/bytecode/ConstantPoolTest.java
+
+### Q15 (commons-io)
+SEED: T:io/monitor/FileAlterationObserverWithListenerExceptionTest.java
+CHANGE: Add PathUtils.touch(Path, FileTime) and use it to fix FileAlterationObserverWithListenerExceptionTest on Java 8.
+CANDIDATES:
+  1. M:io/FileUtils.java
+  2. M:io/IOUtils.java
+  3. M:io/build/AbstractOrigin.java
+  4. M:io/file/PathUtils.java
+  5. M:io/file/package-info.java
+  6. M:io/filefilter/FileFileFilter.java
+  7. M:io/filefilter/FileFilterUtils.java
+  8. M:io/filefilter/HiddenFileFilter.java
+  9. M:io/filefilter/IOFileFilter.java
+  10. M:io/filefilter/RegexFileFilter.java
+  11. M:io/input/CharSequenceInputStream.java
+  12. M:io/input/CloseShieldReader.java
+  13. M:io/monitor/FileAlterationListener.java
+  14. M:io/monitor/FileAlterationListenerAdaptor.java
+  15. M:io/monitor/FileAlterationObserver.java
+  16. M:io/monitor/FileEntry.java
+  17. M:io/monitor/SerializableFileTime.java
+  18. M:io/output/CloseShieldOutputStream.java
+  19. M:io/output/QueueOutputStream.java
+  20. T:io/FileUtilsTest.java
+  21. T:io/IOUtilsTest.java
+  22. T:io/file/PathUtilsCountingTest.java
+  23. T:io/file/attribute/FileTimesTest.java
+  24. T:io/filefilter/FileFilterTest.java
+  25. T:io/monitor/AbstractMonitorTest.java
+  26. T:io/monitor/FileAlterationMonitorTest.java
+  27. T:io/monitor/FileAlterationObserverTest.java
+  28. T:io/monitor/FileEntryTest.java
+  29. T:io/monitor/SerializableFileTimeTest.java
+  30. T:io/serialization/ValidatingObjectInputStreamTest.java
+
+### Q16 (pdfbox)
+SEED: M:pdfbox|org/apache/pdfbox/pdfparser/COSParser.java
+CHANGE: PDFBOX-6268: replace keycache to avoid rebuilding it again and again as proposed by Tim Allison
+CANDIDATES:
+  1. M:fontbox|org/apache/fontbox/cff/CFFParser.java
+  2. M:io|org/apache/pdfbox/io/RandomAccessReadView.java
+  3. M:pdfbox|org/apache/pdfbox/cos/COSDocument.java
+  4. M:pdfbox|org/apache/pdfbox/cos/ICOSParser.java
+  5. M:pdfbox|org/apache/pdfbox/pdfparser/BaseParser.java
+  6. M:pdfbox|org/apache/pdfbox/pdfparser/BruteForceParser.java
+  7. M:pdfbox|org/apache/pdfbox/pdfparser/EndstreamFilterStream.java
+  8. M:pdfbox|org/apache/pdfbox/pdfparser/FDFParser.java
+  9. M:pdfbox|org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java
+  10. M:pdfbox|org/apache/pdfbox/pdfparser/PDFParser.java
+  11. M:pdfbox|org/apache/pdfbox/pdfparser/PDFStreamParser.java
+  12. M:pdfbox|org/apache/pdfbox/pdfparser/PDFXRefStream.java
+  13. M:pdfbox|org/apache/pdfbox/pdfparser/PDFXrefStreamParser.java
+  14. M:pdfbox|org/apache/pdfbox/pdfparser/XrefParser.java
+  15. M:pdfbox|org/apache/pdfbox/pdfparser/XrefTrailerResolver.java
+  16. M:pdfbox|org/apache/pdfbox/pdfwriter/COSWriter.java
+  17. M:pdfbox|org/apache/pdfbox/pdmodel/PDDocument.java
+  18. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/AccessPermission.java
+  19. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/DecryptionMaterial.java
+  20. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/InvalidPasswordException.java
+  21. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/PDEncryption.java
+  22. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/ProtectionPolicy.java
+  23. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/PublicKeyDecryptionMaterial.java
+  24. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java
+  25. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/StandardDecryptionMaterial.java
+  26. T:pdfbox|org/apache/pdfbox/pdfparser/EndstreamFilterStreamTest.java
+  27. T:pdfbox|org/apache/pdfbox/pdfparser/TestPDFParser.java
+
+### Q17 (commons-collections)
+SEED: M:collections4/iterators/LoopingListIterator.java
+CHANGE: Can't rename protected instance variable
+CANDIDATES:
+  1. M:collections4/CollectionUtils.java
+  2. M:collections4/IteratorUtils.java
+  3. M:collections4/MapUtils.java
+  4. M:collections4/OrderedIterator.java
+  5. M:collections4/ResettableListIterator.java
+  6. M:collections4/iterators/AbstractOrderedMapIteratorDecorator.java
+  7. M:collections4/iterators/ArrayIterator.java
+  8. M:collections4/iterators/BoundedIterator.java
+  9. M:collections4/iterators/EmptyIterator.java
+  10. M:collections4/iterators/EmptyOrderedIterator.java
+  11. M:collections4/iterators/EntrySetMapIterator.java
+  12. M:collections4/iterators/IteratorEnumeration.java
+  13. M:collections4/iterators/IteratorIterable.java
+  14. M:collections4/iterators/LoopingIterator.java
+  15. M:collections4/iterators/PeekingIterator.java
+  16. M:collections4/iterators/PushbackIterator.java
+  17. M:collections4/iterators/ReverseListIterator.java
+  18. M:collections4/iterators/SingletonIterator.java
+  19. M:collections4/iterators/SingletonListIterator.java
+  20. M:collections4/iterators/SkippingIterator.java
+  21. M:collections4/iterators/UniqueFilterIterator.java
+  22. M:collections4/iterators/UnmodifiableIterator.java
+  23. M:collections4/iterators/UnmodifiableListIterator.java
+  24. M:collections4/iterators/ZippingIterator.java
+  25. M:collections4/map/MultiValueMap.java
+  26. T:collections4/iterators/BoundedIteratorTest.java
+  27. T:collections4/iterators/CollatingIteratorTest.java
+  28. T:collections4/iterators/ListIteratorWrapper2Test.java
+  29. T:collections4/iterators/ListIteratorWrapperTest.java
+  30. T:collections4/iterators/LoopingListIteratorTest.java
+  31. T:collections4/iterators/PeekingIteratorTest.java
+  32. T:collections4/iterators/ReverseListIteratorTest.java
+  33. T:collections4/iterators/ZippingIteratorTest.java
+
+### Q18 (commons-lang)
+SEED: T:lang3/JavaVersionTest.java
+CHANGE: Add JavaVersion.JAVA_28 (#1797)
+CANDIDATES:
+  1. M:lang3/CharRange.java
+  2. M:lang3/Functions.java
+  3. M:lang3/JavaVersion.java
+  4. M:lang3/SystemUtils.java
+  5. M:lang3/math/NumberUtils.java
+  6. M:lang3/text/StrBuilder.java
+  7. T:lang3/AbstractLangTest.java
+  8. T:lang3/ArraySorterTest.java
+  9. T:lang3/ArrayUtilsConcatTest.java
+  10. T:lang3/ArrayUtilsSetTest.java
+  11. T:lang3/ArrayUtilsTest.java
+  12. T:lang3/CharSequenceUtilsTest.java
+  13. T:lang3/CharUtilsPerfRun.java
+  14. T:lang3/ClassLoaderUtilsTest.java
+  15. T:lang3/ClassUtilsShortClassNameTest.java
+  16. T:lang3/HashSetvBitSetBenchmark.java
+  17. T:lang3/LongRangeTest.java
+  18. T:lang3/NotImplementedExceptionTest.java
+  19. T:lang3/ObjectUtilsTest.java
+  20. T:lang3/SerializationUtilsTest.java
+  21. T:lang3/StringUtilsGetDigitsBenchmark.java
+  22. T:lang3/StringUtilsIndexOfAnyTest.java
+  23. T:lang3/StringUtilsIsMixedCaseTest.java
+  24. T:lang3/StringUtilsJoinBenchmark.java
+  25. T:lang3/StringUtilsStartsEndsWithTest.java
+  26. T:lang3/StringUtilsTest.java
+  27. T:lang3/StringUtilsTrimTest.java
+  28. T:lang3/StringUtilsValueOfTest.java
+  29. T:lang3/SystemUtilsTest.java
+  30. T:lang3/builder/ToStringBuilderTest.java
+  31. T:lang3/math/NumberUtilsTest.java
+  32. T:lang3/mutable/MutableLongTest.java
+  33. T:lang3/reflect/MethodUtilsTest.java
+  34. T:lang3/text/translate/OctalUnescaperTest.java
+  35. T:lang3/time/DateUtilsTest.java
+
+### Q19 (pdfbox)
+SEED: M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType3Font.java
+CHANGE: PDFBOX-5339: check font matrix values before creating a matrix, set problematic constructor to private
+CANDIDATES:
+  1. M:debugger|org/apache/pdfbox/debugger/fontencodingpane/FontEncodingPaneController.java
+  2. M:debugger|org/apache/pdfbox/debugger/fontencodingpane/Type3Font.java
+  3. M:debugger|org/apache/pdfbox/debugger/pagepane/DebugTextOverlay.java
+  4. M:pdfbox|org/apache/pdfbox/pdmodel/PDResources.java
+  5. M:pdfbox|org/apache/pdfbox/pdmodel/ResourceCache.java
+  6. M:pdfbox|org/apache/pdfbox/pdmodel/font/CIDSystemInfo.java
+  7. M:pdfbox|org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java
+  8. M:pdfbox|org/apache/pdfbox/pdmodel/font/FontFormat.java
+  9. M:pdfbox|org/apache/pdfbox/pdmodel/font/FontInfo.java
+  10. M:pdfbox|org/apache/pdfbox/pdmodel/font/FontMapperImpl.java
+  11. M:pdfbox|org/apache/pdfbox/pdmodel/font/FontProvider.java
+  12. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDCIDFont.java
+  13. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java
+  14. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDCIDFontType2Embedder.java
+  15. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDFont.java
+  16. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDFontFactory.java
+  17. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDMMType1Font.java
+  18. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDSimpleFont.java
+  19. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java
+  20. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDTrueTypeFontEmbedder.java
+  21. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType0Font.java
+  22. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType1CFont.java
+  23. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType1Font.java
+  24. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType3CharProc.java
+  25. M:pdfbox|org/apache/pdfbox/pdmodel/font/encoding/DictionaryEncoding.java
+  26. M:pdfbox|org/apache/pdfbox/pdmodel/font/encoding/Encoding.java
+  27. M:pdfbox|org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java
+  28. M:pdfbox|org/apache/pdfbox/util/Vector.java
+  29. T:pdfbox|org/apache/pdfbox/pdmodel/font/PDFontTest.java
+  30. T:pdfbox|org/apache/pdfbox/pdmodel/font/TestFontEmbedding.java
+  31. T:pdfbox|org/apache/pdfbox/pdmodel/font/TestFontEncoding.java
+  32. T:pdfbox|org/apache/pdfbox/text/TestTextStripper.java
+  33. M:preflight|org/apache/pdfbox/preflight/font/container/Type3Container.java
+
+### Q20 (commons-compress)
+SEED: T:compress/osgi/OsgiWithoutOptionalDepsITest.java
+CHANGE: [COMPRESS-676] OSGi deps: commons-io optional and remove unknown
+CANDIDATES:
+  1. M:compress/archivers/dump/DumpArchiveException.java
+  2. M:compress/archivers/sevenz/StreamMap.java
+  3. M:compress/archivers/sevenz/SubStreamsInfo.java
+  4. M:compress/archivers/zip/StreamCompressor.java
+  5. M:compress/archivers/zip/ZipArchiveEntryRequest.java
+  6. M:compress/compressors/brotli/BrotliUtils.java
+  7. M:compress/compressors/deflate/DeflateParameters.java
+  8. M:compress/harmony/pack200/CPLong.java
+  9. M:compress/harmony/pack200/Pack200Adapter.java
+  10. M:compress/harmony/pack200/Pack200ClassReader.java
+  11. M:compress/harmony/unpack200/bytecode/forms/SuperInitMethodRefForm.java
+  12. M:compress/utils/package-info.java
+  13. T:compress/archivers/LongPathTest.java
+  14. T:compress/archivers/ZipTest.java
+  15. T:compress/archivers/sevenz/SevenZFileTest.java
+  16. T:compress/archivers/tar/TarArchiveInputStreamTest.java
+  17. T:compress/archivers/tar/TarArchiveOutputStreamTest.java
+  18. T:compress/archivers/tar/TarUtilsTest.java
+  19. T:compress/archivers/zip/ExtraFieldUtilsTest.java
+  20. T:compress/archivers/zip/NioZipEncodingTest.java
+  21. T:compress/archivers/zip/ZipArchiveInputStreamTest.java
+  22. T:compress/archivers/zip/ZipEightByteIntegerTest.java
+  23. T:compress/archivers/zip/ZipFileTest.java
+  24. T:compress/harmony/unpack200/NewAttributeBandsTest.java
+  25. T:compress/osgi/AbstractOsgiITest.java
+  26. T:compress/osgi/Configurations.java
+  27. T:compress/osgi/OsgiITest.java
+  28. T:compress/utils/BoundedSeekableByteChannelInputStreamTest.java
+  29. T:compress/utils/OsgiUtilsTest.java
+  30. T:compress/utils/ServiceLoaderIteratorTest.java
+
+### Q21 (commons-io)
+SEED: T:io/file/TempDirectoryTest.java
+CHANGE: Don't use the Maven "target" directory as a test fixture.
+CANDIDATES:
+  1. M:io/FileUtils.java
+  2. M:io/file/AccumulatorPathVisitor.java
+  3. M:io/file/Counters.java
+  4. M:io/file/DirectoryStreamFilter.java
+  5. M:io/file/FilesUncheck.java
+  6. M:io/file/PathFilter.java
+  7. M:io/file/PathUtils.java
+  8. M:io/file/StandardDeleteOption.java
+  9. T:io/FileUtilsCopyDirectoryToDirectoryTest.java
+  10. T:io/FileUtilsTest.java
+  11. T:io/IOUtilsCopyTest.java
+  12. T:io/IOUtilsTest.java
+  13. T:io/channels/CloseShieldChannelTest.java
+  14. T:io/file/AbstractPathWrapper.java
+  15. T:io/file/CleaningPathVisitorTest.java
+  16. T:io/file/CopyDirectoryVisitorTest.java
+  17. T:io/file/CounterAssertions.java
+  18. T:io/file/DirectoryStreamFilterTest.java
+  19. T:io/file/PathUtilsContentEqualsTest.java
+  20. T:io/file/PathUtilsCountingTest.java
+  21. T:io/file/PathUtilsDeleteTest.java
+  22. T:io/file/PathUtilsIsEmptyTest.java
+  23. T:io/file/PathUtilsTest.java
+  24. T:io/file/PathUtilsVisitorTest.java
+  25. T:io/file/TempDirectory.java
+  26. T:io/file/TempFile.java
+  27. T:io/file/TempFileTest.java
+  28. T:io/file/TestArguments.java
+  29. T:io/filefilter/FileFilterTest.java
+  30. T:io/input/BoundedReaderTest.java
+  31. T:io/output/LockableFileWriterTest.java
+
+### Q22 (commons-lang)
+SEED: M:lang3/SystemUtils.java
+CHANGE: Add JavaVersion.JAVA_24
+CANDIDATES:
+  1. M:lang3/AppendableJoiner.java
+  2. M:lang3/ArraySorter.java
+  3. M:lang3/ArrayUtils.java
+  4. M:lang3/BooleanUtils.java
+  5. M:lang3/CharEncoding.java
+  6. M:lang3/CharUtils.java
+  7. M:lang3/ClassUtils.java
+  8. M:lang3/EnumUtils.java
+  9. M:lang3/JavaVersion.java
+  10. M:lang3/LocaleUtils.java
+  11. M:lang3/NumberRange.java
+  12. M:lang3/ObjectUtils.java
+  13. M:lang3/RandomStringUtils.java
+  14. M:lang3/RandomUtils.java
+  15. M:lang3/SerializationUtils.java
+  16. M:lang3/StringEscapeUtils.java
+  17. M:lang3/StringUtils.java
+  18. M:lang3/Validate.java
+  19. M:lang3/builder/ToStringStyle.java
+  20. M:lang3/reflect/FieldUtils.java
+  21. M:lang3/text/StrBuilder.java
+  22. T:lang3/ArchUtilsTest.java
+  23. T:lang3/JavaVersionTest.java
+  24. T:lang3/ObjectUtilsTest.java
+  25. T:lang3/SerializationUtilsTest.java
+  26. T:lang3/StreamsTest.java
+  27. T:lang3/SystemUtilsTest.java
+  28. T:lang3/exception/ExceptionUtilsTest.java
+  29. T:lang3/reflect/FieldUtilsTest.java
+  30. T:lang3/time/FastDateParserTest.java
+  31. T:lang3/time/FastDateParser_TimeZoneStrategyTest.java
+
+### Q23 (commons-io)
+SEED: T:io/monitor/FileEntryTest.java
+CHANGE: Add FileEntry.toString().
+CANDIDATES:
+  1. M:io/FileUtils.java
+  2. M:io/comparator/SizeFileComparator.java
+  3. M:io/file/PathUtils.java
+  4. M:io/filefilter/FileEqualsFileFilter.java
+  5. M:io/monitor/FileAlterationListenerAdaptor.java
+  6. M:io/monitor/FileAlterationMonitor.java
+  7. M:io/monitor/FileAlterationObserver.java
+  8. M:io/monitor/FileEntry.java
+  9. M:io/monitor/SerializableFileTime.java
+  10. M:io/monitor/package-info.java
+  11. M:io/output/DemuxOutputStream.java
+  12. T:io/FileUtilsDeleteDirectoryWindowsTest.java
+  13. T:io/FileUtilsTest.java
+  14. T:io/IOUtilsTest.java
+  15. T:io/build/FileOriginTest.java
+  16. T:io/channels/CloseShieldChannelTest.java
+  17. T:io/comparator/DirectoryFileComparatorTest.java
+  18. T:io/file/TempDirectoryTest.java
+  19. T:io/filefilter/FileFilterTest.java
+  20. T:io/function/IOTriConsumerTest.java
+  21. T:io/function/PathBaseStream.java
+  22. T:io/input/ChecksumInputStreamTest.java
+  23. T:io/input/ReadAheadInputStreamTest.java
+  24. T:io/monitor/AbstractMonitorTest.java
+  25. T:io/monitor/CollectionFileListener.java
+  26. T:io/monitor/FileAlterationMonitorTest.java
+  27. T:io/monitor/FileAlterationObserverTest.java
+  28. T:io/monitor/SerializableFileTimeTest.java
+
+### Q24 (commons-io)
+SEED: M:io/input/ClosedInputStream.java
+CHANGE: AutoCloseInputStream(InputStream) uses ClosedInputStream.INSTANCE when its input is null
+CANDIDATES:
+  1. M:io/FileUtils.java
+  2. M:io/IOUtils.java
+  3. M:io/build/AbstractStreamBuilder.java
+  4. M:io/input/AbstractCharacterFilterReader.java
+  5. M:io/input/AutoCloseInputStream.java
+  6. M:io/input/ByteBufferCleaner.java
+  7. M:io/input/CharSequenceReader.java
+  8. M:io/input/ChecksumInputStream.java
+  9. M:io/input/CloseShieldInputStream.java
+  10. M:io/input/CountingInputStream.java
+  11. M:io/input/DemuxInputStream.java
+  12. M:io/input/ProxyInputStream.java
+  13. M:io/input/ProxyReader.java
+  14. M:io/input/QueueInputStream.java
+  15. M:io/input/ReaderInputStream.java
+  16. M:io/input/SwappedDataInputStream.java
+  17. M:io/input/Tailer.java
+  18. M:io/input/TailerListener.java
+  19. M:io/input/TeeInputStream.java
+  20. M:io/input/TimestampedObserver.java
+  21. M:io/output/AbstractByteArrayOutputStream.java
+  22. M:io/output/CloseShieldOutputStream.java
+  23. M:io/output/ClosedOutputStream.java
+  24. T:io/input/AbstractInputStreamTest.java
+  25. T:io/input/AutoCloseInputStreamTest.java
+  26. T:io/input/CharacterFilterReaderTest.java
+  27. T:io/input/ChecksumInputStreamTest.java
+  28. T:io/input/CircularInputStreamTest.java
+  29. T:io/input/ClosedInputStreamTest.java
+  30. T:io/input/CountingInputStreamTest.java
+  31. T:io/input/InfiniteCircularInputStreamTest.java
+  32. T:io/input/ReversedLinesFileReaderTestSimple.java
+  33. T:io/input/SequenceReaderTest.java
+  34. T:io/input/UncheckedFilterInputStreamTest.java
+  35. T:io/output/ByteArrayOutputStreamTest.java
+
+### Q25 (commons-collections)
+SEED: T:collections4/map/ReferenceMapTest.java
+CHANGE: Reduce copy-pasta in tests.
+CANDIDATES:
+  1. M:collections4/CollectionUtils.java
+  2. M:collections4/IterableMap.java
+  3. M:collections4/IteratorUtils.java
+  4. M:collections4/KeyValue.java
+  5. M:collections4/ListUtils.java
+  6. M:collections4/iterators/EmptyIterator.java
+  7. M:collections4/iterators/EmptyMapIterator.java
+  8. M:collections4/keyvalue/DefaultMapEntry.java
+  9. M:collections4/map/AbstractHashedMap.java
+  10. M:collections4/map/AbstractReferenceMap.java
+  11. M:collections4/map/LazySortedMap.java
+  12. M:collections4/map/MultiKeyMap.java
+  13. M:collections4/map/ReferenceMap.java
+  14. M:collections4/map/TransformedMap.java
+  15. M:collections4/map/package-info.java
+  16. T:collections4/IteratorUtilsTest.java
+  17. T:collections4/bidimap/DualTreeBidiMap2Test.java
+  18. T:collections4/bloomfilter/BitMapTrackerTest.java
+  19. T:collections4/collection/CompositeCollectionTest.java
+  20. T:collections4/iterators/NodeListIteratorTest.java
+  21. T:collections4/map/ConcurrentReferenceHashMapKStrongVSoftTest.java
+  22. T:collections4/map/ConcurrentReferenceHashMapKWeakVWeakIdCTest.java
+  23. T:collections4/map/ConcurrentReferenceHashMapKWeakVWeakTest.java
+  24. T:collections4/map/Flat3MapTest.java
+  25. T:collections4/map/HashedMapTest.java
+  26. T:collections4/map/LRUMapTest.java
+  27. T:collections4/map/LazySortedMapTest.java
+  28. T:collections4/map/PredicatedMapTest.java
+  29. T:collections4/map/ReferenceIdentityMapTest.java
+  30. T:collections4/map/SingletonMapTest.java
+  31. T:collections4/map/TransformedMapTest.java
+  32. T:collections4/multimap/AbstractMultiValuedMapTest.java
+
+### Q26 (pdfbox)
+SEED: M:tools|org/apache/pdfbox/tools/Encrypt.java
+CHANGE: PDFBOX-5660: fix typo, as suggested by Valery Bokov; closes #499; closes #500
+CANDIDATES:
+  1. M:pdfbox|org/apache/pdfbox/Loader.java
+  2. M:pdfbox|org/apache/pdfbox/pdmodel/PDDocument.java
+  3. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/AccessPermission.java
+  4. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/PublicKeyProtectionPolicy.java
+  5. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/PublicKeyRecipient.java
+  6. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/StandardProtectionPolicy.java
+  7. M:tools|org/apache/pdfbox/tools/DecompressObjectstreams.java
+  8. M:tools|org/apache/pdfbox/tools/Decrypt.java
+  9. M:tools|org/apache/pdfbox/tools/ExportFDF.java
+  10. M:tools|org/apache/pdfbox/tools/ExportXFDF.java
+  11. M:tools|org/apache/pdfbox/tools/ExtractImages.java
+  12. M:tools|org/apache/pdfbox/tools/ExtractText.java
+  13. M:tools|org/apache/pdfbox/tools/ImportFDF.java
+  14. M:tools|org/apache/pdfbox/tools/ImportXFDF.java
+  15. M:tools|org/apache/pdfbox/tools/OverlayPDF.java
+  16. M:tools|org/apache/pdfbox/tools/PDFMerger.java
+  17. M:tools|org/apache/pdfbox/tools/PDFSplit.java
+  18. M:tools|org/apache/pdfbox/tools/PDFText2HTML.java
+  19. M:tools|org/apache/pdfbox/tools/PDFToImage.java
+  20. M:tools|org/apache/pdfbox/tools/PrintPDF.java
+  21. M:tools|org/apache/pdfbox/tools/TextToPDF.java
+  22. M:tools|org/apache/pdfbox/tools/Version.java
+  23. M:tools|org/apache/pdfbox/tools/WriteDecodedDoc.java
+  24. T:tools|org/apache/pdfbox/tools/PDFBoxHeadlessTest.java
+  25. T:tools|org/apache/pdfbox/tools/TestTextToPdf.java
+
+### Q27 (commons-compress)
+SEED: M:compress/archivers/ArchiveInputStream.java
+CHANGE: Add messages when throwing NullPointerException.
+CANDIDATES:
+  1. M:compress/archivers/AbstractArchiveBuilder.java
+  2. M:compress/archivers/ArchiveFile.java
+  3. M:compress/archivers/ArchiveOutputStream.java
+  4. M:compress/archivers/ArchiveStreamProvider.java
+  5. M:compress/archivers/EntryStreamOffsets.java
+  6. M:compress/archivers/ar/ArArchiveInputStream.java
+  7. M:compress/archivers/cpio/CpioArchiveInputStream.java
+  8. M:compress/archivers/dump/DumpArchiveInputStream.java
+  9. M:compress/archivers/jar/JarArchiveInputStream.java
+  10. M:compress/archivers/tar/TarArchiveInputStream.java
+  11. M:compress/archivers/zip/ZipArchiveInputStream.java
+  12. M:compress/archivers/zip/ZipArchiveOutputStream.java
+  13. M:compress/archivers/zip/ZipFile.java
+  14. M:compress/changes/ChangeSetPerformer.java
+  15. M:compress/compressors/CompressorInputStream.java
+  16. M:compress/harmony/unpack200/Segment.java
+  17. M:compress/harmony/unpack200/SegmentHeader.java
+  18. M:compress/harmony/unpack200/bytecode/forms/LookupSwitchForm.java
+  19. M:compress/utils/BoundedArchiveInputStream.java
+  20. T:compress/IOMethodsTest.java
+  21. T:compress/archivers/AbstractArchiveFileTest.java
+  22. T:compress/archivers/ArchiveOutputStreamTest.java
+  23. T:compress/archivers/ArchiveStreamFactoryTest.java
+  24. T:compress/archivers/LongPathTest.java
+  25. T:compress/archivers/LongSymLinkTest.java
+  26. T:compress/archivers/TarTest.java
+  27. T:compress/archivers/examples/ParameterizedArchiverTest.java
+  28. T:compress/archivers/examples/ParameterizedExpanderTest.java
+  29. T:compress/archivers/memory/MemoryArchiveInputStream.java
+  30. T:compress/archivers/tar/TarArchiveInputStreamTest.java
+  31. T:compress/archivers/zip/ZipArchiveInputStreamTest.java
+  32. T:compress/compressors/Pack200Test.java
+  33. T:compress/compressors/bzip2/BZip2CompressorInputStreamTest.java
+  34. T:compress/compressors/deflate64/Deflate64CompressorInputStreamTest.java
+  35. T:compress/compressors/pack200/Pack200UtilsTest.java
+
+### Q28 (commons-compress)
+SEED: M:compress/archivers/ArchiveException.java
+CHANGE: org.apache.commons.compress.archivers.zip.ZipFile.createBoundedInputStream(long, long) now throws an ArchiveException instead of IllegalArgumentException
+CANDIDATES:
+  1. M:compress/CompressException.java
+  2. M:compress/archivers/ArchiveEntry.java
+  3. M:compress/archivers/ArchiveInputStream.java
+  4. M:compress/archivers/ArchiveStreamFactory.java
+  5. M:compress/archivers/Lister.java
+  6. M:compress/archivers/StreamingNotSupportedException.java
+  7. M:compress/archivers/dump/DumpArchiveException.java
+  8. M:compress/archivers/examples/Expander.java
+  9. M:compress/archivers/jar/JarArchiveEntry.java
+  10. M:compress/archivers/package-info.java
+  11. M:compress/archivers/sevenz/Folder.java
+  12. M:compress/archivers/sevenz/SevenZFile.java
+  13. M:compress/archivers/tar/TarArchiveInputStream.java
+  14. M:compress/archivers/tar/TarArchiveOutputStream.java
+  15. M:compress/archivers/tar/TarUtils.java
+  16. M:compress/archivers/zip/BinaryTree.java
+  17. M:compress/archivers/zip/ZipArchiveEntry.java
+  18. M:compress/archivers/zip/ZipIoUtil.java
+  19. M:compress/archivers/zip/ZipSplitOutputStream.java
+  20. M:compress/compressors/CompressorException.java
+  21. M:compress/utils/IOUtils.java
+  22. T:compress/archivers/ArTest.java
+  23. T:compress/archivers/ArchiveOutputStreamTest.java
+  24. T:compress/archivers/ArchiveServiceLoaderTest.java
+  25. T:compress/archivers/ArchiveStreamFactoryTest.java
+  26. T:compress/archivers/DumpTest.java
+  27. T:compress/archivers/ExceptionMessageTest.java
+  28. T:compress/archivers/LongPathTest.java
+  29. T:compress/archivers/TarTest.java
+  30. T:compress/archivers/ar/Compress678Test.java
+  31. T:compress/archivers/arj/ArjArchiveInputStreamTest.java
+  32. T:compress/archivers/dump/DumpArchiveUtilTest.java
+  33. T:compress/archivers/sevenz/SevenZAES256SHA256DecoderTest.java
+  34. T:compress/archivers/sevenz/SevenZFileTest.java
+  35. T:compress/archivers/zip/BinaryTreeTest.java
+  36. T:compress/compressors/BZip2Test.java
+
+### Q29 (commons-io)
+SEED: T:io/CharsetsTest.java
+CHANGE: Run two tests that were missing @Test (#899)
+CANDIDATES:
+  1. M:io/Charsets.java
+  2. M:io/CopyUtils.java
+  3. M:io/EndianUtils.java
+  4. M:io/FileDeleteStrategy.java
+  5. M:io/FileUtils.java
+  6. M:io/FilenameUtils.java
+  7. M:io/IOCase.java
+  8. M:io/IOUtils.java
+  9. M:io/RandomAccessFileMode.java
+  10. M:io/file/PathUtils.java
+  11. M:io/function/IOFunction.java
+  12. M:io/input/ReversedLinesFileReader.java
+  13. T:io/DeleteDirectoryTest.java
+  14. T:io/DirectoryWalkerTest.java
+  15. T:io/FileSystemUtilsTest.java
+  16. T:io/FileUtilsDeleteDirectoryLinksTest.java
+  17. T:io/FileUtilsTest.java
+  18. T:io/IOCaseTest.java
+  19. T:io/IOUtilsTest.java
+  20. T:io/IOUtilsWriteTest.java
+  21. T:io/RandomAccessFilesTest.java
+  22. T:io/ThreadMonitorTest.java
+  23. T:io/UncheckedIOExceptionsTest.java
+  24. T:io/filefilter/FileFilterTest.java
+  25. T:io/input/BOMInputStreamTest.java
+  26. T:io/input/CharSequenceInputStreamTest.java
+  27. T:io/input/MemoryMappedFileInputStreamTest.java
+  28. T:io/input/QueueInputStreamTest.java
+  29. T:io/input/TailerTest.java
+  30. T:io/input/UncheckedFilterInputStreamTest.java
+  31. T:io/input/XmlStreamReaderTest.java
+  32. T:io/output/LockableFileWriterTest.java
+
+### Q30 (pdfbox)
+SEED: M:pdfbox|org/apache/pdfbox/cos/COSDictionary.java
+CHANGE: PDFBOX-4892: fix javadoc, as suggested by valerybokov
+CANDIDATES:
+  1. M:pdfbox|org/apache/pdfbox/cos/COSArray.java
+  2. M:pdfbox|org/apache/pdfbox/cos/COSBase.java
+  3. M:pdfbox|org/apache/pdfbox/cos/COSDocument.java
+  4. M:pdfbox|org/apache/pdfbox/cos/COSFloat.java
+  5. M:pdfbox|org/apache/pdfbox/cos/COSIncrement.java
+  6. M:pdfbox|org/apache/pdfbox/cos/COSInteger.java
+  7. M:pdfbox|org/apache/pdfbox/cos/COSName.java
+  8. M:pdfbox|org/apache/pdfbox/cos/COSObject.java
+  9. M:pdfbox|org/apache/pdfbox/cos/COSOutputStream.java
+  10. M:pdfbox|org/apache/pdfbox/cos/COSStream.java
+  11. M:pdfbox|org/apache/pdfbox/cos/COSUpdateInfo.java
+  12. M:pdfbox|org/apache/pdfbox/cos/ICOSParser.java
+  13. M:pdfbox|org/apache/pdfbox/cos/ICOSVisitor.java
+  14. M:pdfbox|org/apache/pdfbox/filter/ASCIIHexFilter.java
+  15. M:pdfbox|org/apache/pdfbox/filter/DCTFilter.java
+  16. M:pdfbox|org/apache/pdfbox/filter/RunLengthDecodeFilter.java
+  17. M:pdfbox|org/apache/pdfbox/multipdf/PDFMergerUtility.java
+  18. M:pdfbox|org/apache/pdfbox/pdfwriter/COSWriter.java
+  19. M:pdfbox|org/apache/pdfbox/pdmodel/PDDocument.java
+  20. M:pdfbox|org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDTableAttributeObject.java
+  21. M:pdfbox|org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java
+  22. M:pdfbox|org/apache/pdfbox/pdmodel/fdf/FDFAnnotationSound.java
+  23. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDMMType1Font.java
+  24. M:pdfbox|org/apache/pdfbox/pdmodel/font/PDType0Font.java
+  25. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/action/PDActionMovie.java
+  26. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValueMDP.java
+  27. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java
+  28. M:pdfbox|org/apache/pdfbox/pdmodel/interactive/form/PDFieldTree.java
+  29. M:pdfbox|org/apache/pdfbox/util/SmallMap.java
+  30. T:pdfbox|org/apache/pdfbox/cos/COSObjectKeyTest.java
+  31. T:pdfbox|org/apache/pdfbox/cos/TestCOSBoolean.java
+  32. T:pdfbox|org/apache/pdfbox/cos/TestCOSString.java
+  33. T:pdfbox|org/apache/pdfbox/cos/TestCOSUpdateInfo.java
+
+### Q31 (commons-compress)
+SEED: T:compress/compressors/lz4/BlockLZ4CompressorOutputStreamTest.java
+CHANGE: [BZip2] BZip2CompressorOutputStream now throws CompressorException instead of IllegalArgumetException/IllegalStateException.
+CANDIDATES:
+  1. M:compress/archivers/ar/ArArchiveInputStream.java
+  2. M:compress/archivers/cpio/CpioArchiveInputStream.java
+  3. M:compress/archivers/tar/TarArchiveInputStream.java
+  4. M:compress/archivers/tar/TarArchiveOutputStream.java
+  5. M:compress/archivers/zip/BinaryTree.java
+  6. M:compress/compressors/CompressorException.java
+  7. M:compress/compressors/deflate64/Deflate64Decoder.java
+  8. M:compress/compressors/lz4/BlockLZ4CompressorInputStream.java
+  9. M:compress/compressors/lz4/BlockLZ4CompressorOutputStream.java
+  10. M:compress/compressors/lz4/FramedLZ4CompressorInputStream.java
+  11. M:compress/compressors/lz4/XXHash32.java
+  12. M:compress/compressors/lz4/package-info.java
+  13. M:compress/compressors/lz77support/LZ77Compressor.java
+  14. M:compress/compressors/snappy/SnappyCompressorOutputStream.java
+  15. M:compress/harmony/unpack200/Archive.java
+  16. M:compress/harmony/unpack200/Pack200UnpackerAdapter.java
+  17. T:compress/archivers/ZipTest.java
+  18. T:compress/archivers/sevenz/SevenZFileTest.java
+  19. T:compress/archivers/sevenz/SevenZOutputFileTest.java
+  20. T:compress/archivers/tar/TarArchiveOutputStreamTest.java
+  21. T:compress/archivers/zip/UnshrinkingInputStreamTest.java
+  22. T:compress/archivers/zip/ZipArchiveInputStreamTest.java
+  23. T:compress/archivers/zip/ZipFileTest.java
+  24. T:compress/compressors/lz4/BlockLZ4CompressorInputStreamTest.java
+  25. T:compress/compressors/lz4/CompressionDegradationTest.java
+  26. T:compress/compressors/lz4/FactoryTest.java
+  27. T:compress/compressors/lz4/FramedLZ4CompressorInputStreamTest.java
+  28. T:compress/compressors/lz4/FramedLZ4CompressorOutputStreamTest.java
+  29. T:compress/compressors/lz4/FramedLZ4CompressorRoundtripTest.java
+  30. T:compress/compressors/lz77support/LZ77CompressorBlockTest.java
+  31. T:compress/compressors/lz77support/LZ77CompressorTest.java
+
+### Q32 (commons-io)
+SEED: M:io/output/LockableFileWriter.java
+CHANGE: Javadoc
+CANDIDATES:
+  1. M:io/Charsets.java
+  2. M:io/FileUtils.java
+  3. M:io/IOUtils.java
+  4. M:io/build/AbstractOrigin.java
+  5. M:io/build/AbstractStreamBuilder.java
+  6. M:io/file/PathUtils.java
+  7. M:io/input/BufferedFileChannelInputStream.java
+  8. M:io/input/ReaderInputStream.java
+  9. M:io/input/ReversedLinesFileReader.java
+  10. M:io/input/Tailer.java
+  11. M:io/input/UnsynchronizedByteArrayInputStream.java
+  12. M:io/input/XmlStreamReader.java
+  13. M:io/output/CloseShieldOutputStream.java
+  14. M:io/output/CloseShieldWriter.java
+  15. M:io/output/DeferredFileOutputStream.java
+  16. M:io/output/FileWriterWithEncoding.java
+  17. M:io/output/NullAppendable.java
+  18. M:io/output/RandomAccessFileOutputStream.java
+  19. M:io/output/StringBuilderWriter.java
+  20. M:io/output/TaggedOutputStream.java
+  21. M:io/output/ThresholdingOutputStream.java
+  22. M:io/output/UncheckedFilterOutputStream.java
+  23. M:io/output/UncheckedFilterWriter.java
+  24. M:io/output/UnsynchronizedByteArrayOutputStream.java
+  25. M:io/output/WriterOutputStream.java
+  26. M:io/output/XmlStreamWriter.java
+  27. M:io/output/package-info.java
+  28. T:io/IOUtilsTest.java
+  29. T:io/output/BrokenOutputStreamTest.java
+  30. T:io/output/LockableFileWriterTest.java
+  31. T:io/output/NullWriterTest.java
+  32. T:io/output/WriterOutputStreamTest.java
+
+### Q33 (commons-lang)
+SEED: T:lang3/CharRangeTest.java
+CHANGE: Fix CharRange.contains for negated argument ranges (#1775)
+CANDIDATES:
+  1. M:lang3/CharRange.java
+  2. M:lang3/CharSet.java
+  3. M:lang3/ClassUtils.java
+  4. M:lang3/RandomUtils.java
+  5. M:lang3/Range.java
+  6. M:lang3/StringUtils.java
+  7. M:lang3/builder/HashCodeBuilder.java
+  8. M:lang3/math/NumberUtils.java
+  9. M:lang3/time/DateUtils.java
+  10. T:lang3/ArrayUtilsInsertTest.java
+  11. T:lang3/ArrayUtilsRemoveMultipleTest.java
+  12. T:lang3/ArrayUtilsRemoveTest.java
+  13. T:lang3/ArrayUtilsTest.java
+  14. T:lang3/CachedRandomBitsTest.java
+  15. T:lang3/CharSequenceUtilsTest.java
+  16. T:lang3/CharSetTest.java
+  17. T:lang3/ClassUtilsOssFuzzTest.java
+  18. T:lang3/ClassUtilsTest.java
+  19. T:lang3/ConversionTest.java
+  20. T:lang3/DoubleRangeTest.java
+  21. T:lang3/LangAssertions.java
+  22. T:lang3/LongRangeTest.java
+  23. T:lang3/ObjectUtilsTest.java
+  24. T:lang3/RandomStringUtilsTest.java
+  25. T:lang3/RangeReadObjectTest.java
+  26. T:lang3/RangeTest.java
+  27. T:lang3/StringUtilsAbbreviateTest.java
+  28. T:lang3/StringUtilsJoinExceptionTest.java
+  29. T:lang3/StringUtilsStartsEndsWithTest.java
+  30. T:lang3/StringUtilsTest.java
+  31. T:lang3/builder/EqualsBuilderTest.java
+  32. T:lang3/math/NumberUtilsTest.java
+  33. T:lang3/mutable/MutableDoubleTest.java
+
+### Q34 (commons-collections)
+SEED: M:collections4/multiset/AbstractMapMultiSet.java
+CHANGE: Clamp overflow in AbstractMapBag and AbstractMapMultiSet add (#705)
+CANDIDATES:
+  1. M:collections4/CollectionUtils.java
+  2. M:collections4/IterableUtils.java
+  3. M:collections4/ListUtils.java
+  4. M:collections4/MultiSet.java
+  5. M:collections4/bag/AbstractMapBag.java
+  6. M:collections4/iterators/AbstractIteratorDecorator.java
+  7. M:collections4/list/CursorableLinkedList.java
+  8. M:collections4/map/Flat3Map.java
+  9. M:collections4/map/LinkedMap.java
+  10. M:collections4/multimap/AbstractMultiValuedMap.java
+  11. M:collections4/multiset/AbstractMultiSet.java
+  12. M:collections4/multiset/AbstractMultiSetDecorator.java
+  13. M:collections4/multiset/AbstractSortedMultiSetDecorator.java
+  14. M:collections4/multiset/HashMultiSet.java
+  15. M:collections4/multiset/PredicatedMultiSet.java
+  16. M:collections4/multiset/PredicatedSortedMultiSet.java
+  17. M:collections4/multiset/SynchronizedMultiSet.java
+  18. M:collections4/multiset/SynchronizedSortedMultiSet.java
+  19. M:collections4/multiset/TransformedSortedMultiSet.java
+  20. M:collections4/multiset/UnmodifiableSortedMultiSet.java
+  21. T:collections4/multiset/AbstractMultiSetTest.java
+  22. T:collections4/multiset/HashMultiSetTest.java
+  23. T:collections4/multiset/PredicatedMultiSetTest.java
+  24. T:collections4/multiset/SynchronizedMultiSetTest.java
+  25. T:collections4/multiset/TransformedMultiSetTest.java
+  26. T:collections4/multiset/TreeMultiSetTest.java
+  27. T:collections4/multiset/UnmodifiableMultiSetTest.java
+  28. T:collections4/multiset/UnmodifiableSortedMultiSetTest.java
+
+### Q35 (commons-collections)
+SEED: T:collections4/set/CompositeSetTest.java
+CHANGE: clamp size() int overflow in composite and multi-valued classes (#710)
+CANDIDATES:
+  1. M:collections4/CollectionUtils.java
+  2. M:collections4/IteratorUtils.java
+  3. M:collections4/ListUtils.java
+  4. M:collections4/collection/CompositeCollection.java
+  5. M:collections4/iterators/EmptyIterator.java
+  6. M:collections4/iterators/IteratorChain.java
+  7. M:collections4/iterators/PermutationIterator.java
+  8. M:collections4/list/AbstractLinkedListJava21.java
+  9. M:collections4/list/UnmodifiableList.java
+  10. M:collections4/map/CompositeMap.java
+  11. M:collections4/set/AbstractSerializableSetDecorator.java
+  12. M:collections4/set/AbstractSortedSetDecorator.java
+  13. M:collections4/set/CompositeSet.java
+  14. M:collections4/set/ListOrderedSet.java
+  15. M:collections4/set/PredicatedSortedSet.java
+  16. M:collections4/set/TransformedNavigableSet.java
+  17. M:collections4/set/TransformedSet.java
+  18. M:collections4/set/UnmodifiableSortedSet.java
+  19. T:collections4/CollectionUtilsTest.java
+  20. T:collections4/IteratorUtilsTest.java
+  21. T:collections4/bloomfilter/SetOperationsTest.java
+  22. T:collections4/collection/CompositeCollectionTest.java
+  23. T:collections4/map/AbstractMapTest.java
+  24. T:collections4/map/CompositeMapTest.java
+  25. T:collections4/map/Flat3MapTest.java
+  26. T:collections4/set/AbstractNavigableSetTest.java
+  27. T:collections4/set/EmptySetMutator.java
+  28. T:collections4/set/MapBackedSet2Test.java
+  29. T:collections4/set/PredicatedSetTest.java
+  30. T:collections4/set/TransformedSetTest.java
+  31. T:collections4/set/TransformedSortedSetTest.java
+  32. T:collections4/set/UnmodifiableSetTest.java
+
+### Q36 (commons-collections)
+SEED: M:collections4/functors/FunctorUtils.java
+CHANGE: Migrate toward java.util.function
+CANDIDATES:
+  1. M:collections4/Closure.java
+  2. M:collections4/CollectionUtils.java
+  3. M:collections4/Predicate.java
+  4. M:collections4/PredicateUtils.java
+  5. M:collections4/Transformer.java
+  6. M:collections4/functors/AbstractPredicate.java
+  7. M:collections4/functors/AbstractQuantifierPredicate.java
+  8. M:collections4/functors/AllPredicate.java
+  9. M:collections4/functors/AnyPredicate.java
+  10. M:collections4/functors/ChainedClosure.java
+  11. M:collections4/functors/ChainedTransformer.java
+  12. M:collections4/functors/ClosureTransformer.java
+  13. M:collections4/functors/ExceptionFactory.java
+  14. M:collections4/functors/FactoryTransformer.java
+  15. M:collections4/functors/MapTransformer.java
+  16. M:collections4/functors/NonePredicate.java
+  17. M:collections4/functors/NullIsTruePredicate.java
+  18. M:collections4/functors/OnePredicate.java
+  19. M:collections4/functors/PredicateDecorator.java
+  20. M:collections4/functors/PredicateTransformer.java
+  21. M:collections4/functors/SwitchClosure.java
+  22. M:collections4/functors/SwitchTransformer.java
+  23. M:collections4/functors/TransformerPredicate.java
+  24. M:collections4/map/AbstractHashedMap.java
+  25. T:collections4/MapUtilsTest.java
+  26. T:collections4/collection/AbstractCollectionTest.java
+  27. T:collections4/functors/AbstractAnyAllOnePredicateTest.java
+  28. T:collections4/functors/AbstractClosureTest.java
+  29. T:collections4/functors/AbstractMockPredicateTest.java
+  30. T:collections4/multimap/AbstractMultiValuedMapTest.java
+
+### Q37 (commons-lang)
+SEED: M:lang3/ArrayUtils.java
+CHANGE: Rename internal method to remove type casts
+CANDIDATES:
+  1. M:lang3/BooleanUtils.java
+  2. M:lang3/CharSetUtils.java
+  3. M:lang3/ClassUtils.java
+  4. M:lang3/EnumUtils.java
+  5. M:lang3/ObjectUtils.java
+  6. M:lang3/RandomStringUtils.java
+  7. M:lang3/RandomUtils.java
+  8. M:lang3/RegExUtils.java
+  9. M:lang3/SerializationUtils.java
+  10. M:lang3/Streams.java
+  11. M:lang3/StringUtils.java
+  12. M:lang3/SystemProperties.java
+  13. M:lang3/SystemUtils.java
+  14. M:lang3/ThreadUtils.java
+  15. M:lang3/builder/DiffBuilder.java
+  16. M:lang3/package-info.java
+  17. M:lang3/reflect/ConstructorUtils.java
+  18. M:lang3/reflect/MethodUtils.java
+  19. M:lang3/stream/IntStreams.java
+  20. M:lang3/text/StrBuilder.java
+  21. M:lang3/text/StrTokenizer.java
+  22. M:lang3/time/DateUtils.java
+  23. M:lang3/util/IterableStringTokenizer.java
+  24. T:lang3/ArrayUtilsAddTest.java
+  25. T:lang3/ArrayUtilsTest.java
+  26. T:lang3/JavaVersionTest.java
+  27. T:lang3/StringUtilsTest.java
+  28. T:lang3/builder/ReflectionToStringBuilderExcludeTest.java
+  29. T:lang3/builder/ReflectionToStringBuilderIncludeTest.java
+  30. T:lang3/concurrent/EventCountCircuitBreakerTest.java
+  31. T:lang3/exception/ExceptionUtilsTest.java
+  32. T:lang3/reflect/TypeUtilsTest.java
+  33. T:lang3/text/StrBuilderTest.java
+  34. T:lang3/time/DateUtilsTest.java
+  35. T:lang3/time/DurationFormatUtilsTest.java
+  36. T:lang3/util/FluentBitSetTest.java
+
+### Q38 (commons-lang)
+SEED: T:lang3/math/FractionTest.java
+CHANGE: Fix Fraction.add and subtract for operands not in lowest terms (#1784)
+CANDIDATES:
+  1. M:lang3/ClassUtils.java
+  2. M:lang3/ObjectUtils.java
+  3. M:lang3/StringUtils.java
+  4. M:lang3/SystemUtils.java
+  5. M:lang3/concurrent/CircuitBreakingException.java
+  6. M:lang3/exception/ExceptionUtils.java
+  7. M:lang3/math/Fraction.java
+  8. M:lang3/math/IEEE754rUtils.java
+  9. M:lang3/math/NumberUtils.java
+  10. M:lang3/math/package-info.java
+  11. M:lang3/text/StrBuilder.java
+  12. M:lang3/time/FastDateParser.java
+  13. T:lang3/AbstractLangTest.java
+  14. T:lang3/ArrayUtilsTest.java
+  15. T:lang3/LangAssertions.java
+  16. T:lang3/RandomUtilsTest.java
+  17. T:lang3/StringUtilsTest.java
+  18. T:lang3/ValidateTest.java
+  19. T:lang3/builder/RecursiveToStringStyleNoForceTest.java
+  20. T:lang3/exception/ExceptionUtilsTest.java
+  21. T:lang3/function/FailableDoubleSupplierTest.java
+  22. T:lang3/math/FractionReadObjectTest.java
+  23. T:lang3/math/IEEE754rUtilsTest.java
+  24. T:lang3/math/NumberUtilsBenchmark.java
+  25. T:lang3/math/NumberUtilsTest.java
+  26. T:lang3/mutable/MutableByteTest.java
+  27. T:lang3/mutable/MutableDoubleTest.java
+  28. T:lang3/mutable/MutableFloatTest.java
+  29. T:lang3/mutable/MutableIntTest.java
+  30. T:lang3/mutable/MutableLongTest.java
+  31. T:lang3/text/CompositeFormatTest.java
+  32. T:lang3/text/ExtendedMessageFormatTest.java
+  33. T:lang3/text/translate/UnicodeUnescaperTest.java
+
+### Q39 (commons-lang)
+SEED: T:lang3/time/DateUtilsRoundingTest.java
+CHANGE: Make a non-access modifier local variables. (#980)
+CANDIDATES:
+  1. M:lang3/StringUtils.java
+  2. M:lang3/time/CalendarUtils.java
+  3. M:lang3/time/DateFormatUtils.java
+  4. M:lang3/time/FastDatePrinter.java
+  5. M:lang3/time/GmtTimeZone.java
+  6. M:lang3/time/package-info.java
+  7. T:lang3/AbstractLangTest.java
+  8. T:lang3/ArrayUtilsTest.java
+  9. T:lang3/StringEscapeUtilsTest.java
+  10. T:lang3/StringUtilsTest.java
+  11. T:lang3/time/CalendarUtilsTest.java
+  12. T:lang3/time/DateFormatUtilsTest.java
+  13. T:lang3/time/DateUtilsFragmentTest.java
+  14. T:lang3/time/DateUtilsTest.java
+  15. T:lang3/time/DurationFormatUtilsTest.java
+  16. T:lang3/time/FastDateFormatTest.java
+  17. T:lang3/time/FastDateFormat_PrinterTest.java
+  18. T:lang3/time/FastDateParserSDFTest.java
+  19. T:lang3/time/FastDateParserTest.java
+  20. T:lang3/time/FastDateParser_MoreOrLessTest.java
+  21. T:lang3/time/FastDateParser_TimeZoneStrategyTest.java
+  22. T:lang3/time/FastDatePrinterTest.java
+  23. T:lang3/time/FastDatePrinterTimeZonesTest.java
+  24. T:lang3/time/FastTimeZoneTest.java
+  25. T:lang3/time/GmtTimeZoneTest.java
+  26. T:lang3/time/WeekYearTest.java
+
+### Q40 (commons-lang)
+SEED: M:lang3/tuple/Pair.java
+CHANGE: Javadoc
+CANDIDATES:
+  1. M:lang3/StringUtils.java
+  2. M:lang3/builder/CompareToBuilder.java
+  3. M:lang3/builder/Diff.java
+  4. M:lang3/builder/EqualsBuilder.java
+  5. M:lang3/builder/ToStringBuilder.java
+  6. M:lang3/exception/ContextedException.java
+  7. M:lang3/exception/ContextedRuntimeException.java
+  8. M:lang3/exception/DefaultExceptionContext.java
+  9. M:lang3/exception/ExceptionContext.java
+  10. M:lang3/exception/UncheckedException.java
+  11. M:lang3/function/FailableBiConsumer.java
+  12. M:lang3/function/FailableBiFunction.java
+  13. M:lang3/reflect/MethodUtils.java
+  14. M:lang3/time/DateUtils.java
+  15. M:lang3/time/DurationFormatUtils.java
+  16. M:lang3/time/FastDateParser.java
+  17. M:lang3/tuple/ImmutablePair.java
+  18. M:lang3/tuple/ImmutableTriple.java
+  19. M:lang3/tuple/MutablePair.java
+  20. M:lang3/tuple/MutableTriple.java
+  21. M:lang3/tuple/Triple.java
+  22. M:lang3/tuple/package-info.java
+  23. T:lang3/StringUtilsTest.java
+  24. T:lang3/exception/AbstractExceptionContextTest.java
+  25. T:lang3/tuple/ImmutablePairTest.java
+  26. T:lang3/tuple/ImmutableTripleTest.java
+  27. T:lang3/tuple/MutablePairTest.java
+  28. T:lang3/tuple/MutableTripleTest.java
+  29. T:lang3/tuple/PairTest.java
+

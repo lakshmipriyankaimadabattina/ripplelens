@@ -1,0 +1,14 @@
+const {JSDOM}=require('jsdom'); const fs=require('fs');
+const dom=new JSDOM(fs.readFileSync('ripplelens_view.html','utf8'),{runScripts:'dangerously'});
+const w=dom.window, d=w.document;
+const ok=(c,m)=>{if(!c){console.log('FAIL',m);process.exitCode=1}else console.log('ok',m)};
+ok(d.querySelectorAll('#commit option').length===40,'40 commits listed');
+ok(d.querySelectorAll('#mbtns button').length===5,'5 method buttons');
+ok(d.querySelectorAll('svg#ripple circle.node').length===10,'10 prediction nodes');
+const before=d.querySelectorAll('circle.node[fill="var(--hit)"]').length; ok(before===0,'no green before reveal');
+d.getElementById('reveal').click();
+const hitsRevealed=d.querySelectorAll('circle.node[data-hit="1"][fill="var(--hit)"]').length;
+const hitsData=d.querySelectorAll('circle.node[data-hit="1"]').length; ok(hitsRevealed===hitsData,'hits turn green on reveal ('+hitsData+' hits)');
+d.querySelectorAll('#mbtns button')[4].click(); ok(d.getElementById('panel').textContent.includes('LLM (pilot)'),'LLM toggle switches panel');
+const s=d.getElementById('commit'); s.value='7'; s.dispatchEvent(new w.Event('change')); ok(d.getElementById('panel').textContent.includes('Truth is hidden'),'changing commit hides truth');
+let tot=0; for(let i=0;i<40;i++){s.value=String(i);s.dispatchEvent(new w.Event('change'));for(let m=0;m<5;m++){d.querySelectorAll('#mbtns button')[m].click();tot+=d.querySelectorAll('svg#ripple circle.node').length}} ok(tot===2000,'all 40x5 views render 10 nodes ('+tot+')');

@@ -1,0 +1,30 @@
+{
+ "repo": "commons-lang",
+ "head_sha": "b9b30efb01e861a16503232bb96b684107e73199",
+ "head_date": "2026-10-21",
+ "total_commits": 10104,
+ "java_files_at_head": 630,
+ "split_boundary_sha": "78b4f09d0b7e2b209badcc05fdeb1844a469ea68",
+ "split_boundary_date": "2022-12-30",
+ "funnel": {
+  "non_merge_commits": 9864,
+  "test_window_commits": 2960,
+  "touch_java": 2004,
+  "size_2_15_java": 660,
+  "dropped_rename_dominated": 0,
+  "dropped_bulk_subject": 44,
+  "eligible": 616,
+  "sampled_test_commits": 300,
+  "extra_post_cutoff_commits": 46,
+  "train_commits_sampled": 400
+ },
+ "skipped_after_sampling": {
+  "fewer_than_2_pre_existing_files": 53
+ },
+ "unmapped_paths": 15,
+ "train_rows": 71575,
+ "train_positives": 875,
+ "n_instances": 738,
+ "n_commits": 320,
+ "runtime_s": 100.3
+}

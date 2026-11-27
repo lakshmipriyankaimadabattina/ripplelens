@@ -1,0 +1,1682 @@
+[
+ {
+  "id": 1,
+  "repo": "commons-lang",
+  "post": true,
+  "sha": "df1e9189",
+  "n_truth": 1,
+  "n_cands": 35,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/lang3/reflect/TypeUtils.java",
+   "src/test/java/org/apache/commons/lang3/reflect/TypeLiteralTest.java",
+   "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+   "src/main/java/org/apache/commons/lang3/reflect/AccessibleObjects.java",
+   "src/main/java/org/apache/commons/lang3/reflect/FieldUtils.java",
+   "src/main/java/org/apache/commons/lang3/reflect/Typed.java",
+   "src/test/java/org/apache/commons/lang3/reflect/MethodUtilsAnnotationsTest.java",
+   "src/test/java/org/apache/commons/lang3/reflect/ConstructorUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/reflect/InheritanceUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java"
+  ]
+ },
+ {
+  "id": 2,
+  "repo": "commons-io",
+  "post": true,
+  "sha": "363d166c",
+  "n_truth": 1,
+  "n_cands": 29,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+   "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationObserver.java",
+   "src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationMonitor.java",
+   "src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java",
+   "src/test/java/org/apache/commons/io/monitor/CollectionFileListener.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationListener.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationListenerAdaptor.java",
+   "src/test/java/org/apache/commons/io/monitor/SerializableFileTimeTest.java"
+  ]
+ },
+ {
+  "id": 3,
+  "repo": "pdfbox",
+  "post": false,
+  "sha": "f6be6a84",
+  "n_truth": 2,
+  "n_cands": 28,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.4,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.2
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.25
+  },
+  "ranked": [
+   "pdfbox/src/main/java/org/apache/pdfbox/contentstream/PDFStreamEngine.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/contentstream/PDFGraphicsStreamEngine.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/form/PDFormXObject.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/graphics/pattern/PDTilingPattern.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType3CharProc.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPage.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDResources.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/text/LegacyPDFStreamEngine.java",
+   "examples/src/main/java/org/apache/pdfbox/examples/rendering/CustomGraphicsStreamEngine.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/contentstream/operator/graphics/DrawObject.java"
+  ]
+ },
+ {
+  "id": 4,
+  "repo": "commons-collections",
+  "post": true,
+  "sha": "53602067",
+  "n_truth": 2,
+  "n_cands": 28,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.014084507042253521
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.07142857142857142
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/collections4/AbstractLinkedListTest.java",
+   "src/test/java/org/apache/commons/collections4/list/Collections701Test.java",
+   "src/main/java/org/apache/commons/collections4/list/TreeList.java",
+   "src/test/java/org/apache/commons/collections4/AbstractArrayListTest.java",
+   "src/test/java/org/apache/commons/collections4/list/FixedSizeListTest.java",
+   "src/test/java/org/apache/commons/collections4/list/LazyListTest.java",
+   "src/test/java/org/apache/commons/collections4/collection/AbstractCollectionTest.java",
+   "src/test/java/org/apache/commons/collections4/list/DefaultAbstractLinkedListJava21Test.java",
+   "src/main/java/org/apache/commons/collections4/list/AbstractSerializableListDecorator.java",
+   "src/main/java/org/apache/commons/collections4/list/FixedSizeList.java"
+  ]
+ },
+ {
+  "id": 5,
+  "repo": "pdfbox",
+  "post": false,
+  "sha": "f8038d35",
+  "n_truth": 3,
+  "n_cands": 33,
+  "ceiling": 0.6666666666666666,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.6666666666666666,
+   "Hit@10": 1.0,
+   "MRR": 0.16666666666666666
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.3333333333333333,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.3333333333333333,
+   "Hit@10": 1.0,
+   "MRR": 0.2
+  },
+  "ranked": [
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/PDFTreeModel.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/Tree.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/ArrayEntry.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/MapEntry.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/PageEntry.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/XrefEntries.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/PDFDebugger.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/ReaderBottomPanel.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/ui/ZoomMenu.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/treestatus/TreeStatus.java"
+  ]
+ },
+ {
+  "id": 6,
+  "repo": "commons-collections",
+  "post": true,
+  "sha": "88d8b2f6",
+  "n_truth": 1,
+  "n_cands": 28,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.007407407407407408
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.043478260869565216
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/collections4/MapUtils.java",
+   "src/main/java/org/apache/commons/collections4/map/UnmodifiableEntrySet.java",
+   "src/main/java/org/apache/commons/collections4/iterators/UnmodifiableMapIterator.java",
+   "src/main/java/org/apache/commons/collections4/map/EntrySetToMapIteratorAdapter.java",
+   "src/main/java/org/apache/commons/collections4/collection/UnmodifiableCollection.java",
+   "src/main/java/org/apache/commons/collections4/set/UnmodifiableSet.java",
+   "src/test/java/org/apache/commons/collections4/CollectionUtilsTest.java",
+   "src/main/java/org/apache/commons/collections4/CollectionUtils.java",
+   "src/main/java/org/apache/commons/collections4/BidiMap.java",
+   "src/main/java/org/apache/commons/collections4/OrderedBidiMap.java"
+  ]
+ },
+ {
+  "id": 7,
+  "repo": "pdfbox",
+  "post": true,
+  "sha": "9aaa2001",
+  "n_truth": 3,
+  "n_cands": 29,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.6,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.6,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.4,
+   "R@5": 0.6666666666666666,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "pdfbox-layout-awt/src/test/java/org/apache/pdfbox/glyphlayout/GlyphLayoutDin91379FormTest.java",
+   "pdfbox-layout-awt/src/test/java/org/apache/pdfbox/glyphlayout/GlyphLayoutBidiTest.java",
+   "pdfbox-layout-awt/src/test/java/org/apache/pdfbox/glyphlayout/GlyphLayoutLigaturesAndKerningTest.java",
+   "pdfbox-layout-awt/src/main/java/org/apache/pdfbox/glyphlayout/GlyphLayoutProcessorAwt.java",
+   "pdfbox-layout-awt/src/main/java/org/apache/pdfbox/glyphlayout/GlyphLayoutFontLoaderAwt.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/ContentStreamForGlyphLayoutInterface.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/text/PDFTextStripper.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java"
+  ]
+ },
+ {
+  "id": 8,
+  "repo": "commons-io",
+  "post": false,
+  "sha": "3ddf1ad5",
+  "n_truth": 1,
+  "n_cands": 31,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/io/function/IOIterator.java",
+   "src/main/java/org/apache/commons/io/function/IOIteratorAdapter.java",
+   "src/test/java/org/apache/commons/io/function/IOIteratorAdapterTest.java",
+   "src/main/java/org/apache/commons/io/function/UncheckedIOIterator.java",
+   "src/main/java/org/apache/commons/io/IOUtils.java",
+   "src/test/java/org/apache/commons/io/IOUtilsTest.java",
+   "src/main/java/org/apache/commons/io/function/IOSupplier.java",
+   "src/main/java/org/apache/commons/io/function/IOBiConsumer.java",
+   "src/main/java/org/apache/commons/io/function/IOStreamAdapter.java",
+   "src/test/java/org/apache/commons/io/function/IOIntStreamAdapter.java"
+  ]
+ },
+ {
+  "id": 9,
+  "repo": "commons-collections",
+  "post": false,
+  "sha": "b4e7ff36",
+  "n_truth": 4,
+  "n_cands": 35,
+  "ceiling": 0.25,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 0.25,
+   "R@10": 0.25,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.25,
+   "R@10": 0.25,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 0.25,
+   "R@10": 0.25,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/collections4/iterators/AbstractMapIteratorTest.java",
+   "src/test/java/org/apache/commons/collections4/AbstractObjectTest.java",
+   "src/test/java/org/apache/commons/collections4/iterators/ArrayIteratorTest.java",
+   "src/test/java/org/apache/commons/collections4/list/AbstractListTest.java",
+   "src/test/java/org/apache/commons/collections4/iterators/IteratorChainTest.java",
+   "src/main/java/org/apache/commons/collections4/iterators/IteratorChain.java",
+   "src/main/java/org/apache/commons/collections4/IteratorUtils.java",
+   "src/test/java/org/apache/commons/collections4/iterators/SingletonIteratorTest.java",
+   "src/test/java/org/apache/commons/collections4/iterators/ArrayIterator2Test.java",
+   "src/test/java/org/apache/commons/collections4/iterators/FilterIteratorTest.java"
+  ]
+ },
+ {
+  "id": 10,
+  "repo": "commons-compress",
+  "post": true,
+  "sha": "7d9ab8e2",
+  "n_truth": 2,
+  "n_cands": 31,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.4,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/archivers/lha/LhaArchiveEntry.java",
+   "src/test/java/org/apache/commons/compress/archivers/lha/LhaArchiveInputStreamTest.java",
+   "src/test/java/org/apache/commons/compress/archivers/lha/LhaArchiveEntryTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/lha/Lh4CompressorInputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/lha/Lh5CompressorInputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/lha/Lh6CompressorInputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/lha/Lh7CompressorInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/lha/package-info.java",
+   "src/test/java/org/apache/commons/compress/compressors/lha/AbstractLhStaticHuffmanCompressorInputStreamTest.java",
+   "src/test/java/org/apache/commons/compress/compressors/lha/Lh4CompressorInputStreamTest.java"
+  ]
+ },
+ {
+  "id": 11,
+  "repo": "pdfbox",
+  "post": true,
+  "sha": "b811df6e",
+  "n_truth": 8,
+  "n_cands": 36,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0033333333333333335
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.05263157894736842
+  },
+  "ranked": [
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSDictionary.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDAbstractContentStream.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/common/PDStream.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDResources.java",
+   "pdfbox/src/test/java/org/apache/pdfbox/cos/COSDictionaryTest.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSArray.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java"
+  ]
+ },
+ {
+  "id": 12,
+  "repo": "commons-compress",
+  "post": false,
+  "sha": "60dd897f",
+  "n_truth": 4,
+  "n_cands": 25,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.6,
+   "R@5": 0.75,
+   "R@10": 0.75,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.25,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "combined": {
+   "P@5": 0.4,
+   "R@5": 0.5,
+   "R@10": 0.75,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/compressors/snappy/SnappyCompressorInputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorOutputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStream.java",
+   "src/test/java/org/apache/commons/compress/compressors/snappy/SnappyRoundtripTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/snappy/package-info.java",
+   "src/main/java/org/apache/commons/compress/compressors/snappy/FramedSnappyDialect.java",
+   "src/test/java/org/apache/commons/compress/compressors/snappy/FramedSnappyCompressorInputStreamTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorOutputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorOutputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/CompressorOutputStream.java"
+  ]
+ },
+ {
+  "id": 13,
+  "repo": "commons-compress",
+  "post": false,
+  "sha": "ec9f2d72",
+  "n_truth": 1,
+  "n_cands": 34,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.023809523809523808
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0015698587127158557
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/BandSet.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/ClassBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/BcBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/AttributeDefinitionBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/NewAttributeBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/MetadataBandGroup.java",
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/ClassBands.java",
+   "src/test/java/org/apache/commons/compress/harmony/unpack200/BandSetTest.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/CodecEncoding.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/Archive.java"
+  ]
+ },
+ {
+  "id": 14,
+  "repo": "commons-compress",
+  "post": true,
+  "sha": "ab221c74",
+  "n_truth": 1,
+  "n_cands": 27,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.034482758620689655
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/BandSet.java",
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/ClassBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/BcBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/CpBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/MetadataBandGroup.java",
+   "src/test/java/org/apache/commons/compress/harmony/unpack200/ClassBandsTest.java",
+   "src/test/java/org/apache/commons/compress/harmony/unpack200/BcBandsTest.java",
+   "src/test/java/org/apache/commons/compress/harmony/unpack200/AbstractBandsTest.java",
+   "src/main/java/org/apache/commons/compress/harmony/unpack200/FileBands.java",
+   "src/main/java/org/apache/commons/compress/harmony/pack200/Pack200Exception.java"
+  ]
+ },
+ {
+  "id": 15,
+  "repo": "commons-io",
+  "post": true,
+  "sha": "21510fec",
+  "n_truth": 2,
+  "n_cands": 30,
+  "ceiling": 0.5,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.002631578947368421
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.2
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/io/file/PathUtils.java",
+   "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+   "src/test/java/org/apache/commons/io/file/PathUtilsCountingTest.java",
+   "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationObserver.java",
+   "src/test/java/org/apache/commons/io/file/attribute/FileTimesTest.java",
+   "src/main/java/org/apache/commons/io/FileUtils.java",
+   "src/test/java/org/apache/commons/io/monitor/FileEntryTest.java",
+   "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+   "src/main/java/org/apache/commons/io/monitor/SerializableFileTime.java"
+  ]
+ },
+ {
+  "id": 16,
+  "repo": "pdfbox",
+  "post": true,
+  "sha": "c1113264",
+  "n_truth": 2,
+  "n_cands": 27,
+  "ceiling": 0.5,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.016129032258064516
+  },
+  "ranked": [
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSDocument.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefParser.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfparser/BruteForceParser.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/ICOSParser.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java",
+   "pdfbox/src/test/java/org/apache/pdfbox/pdfparser/TestPDFParser.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java"
+  ]
+ },
+ {
+  "id": 17,
+  "repo": "commons-collections",
+  "post": false,
+  "sha": "d3271b9b",
+  "n_truth": 2,
+  "n_cands": 33,
+  "ceiling": 0.5,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 0.5,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.05
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.02631578947368421
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/collections4/iterators/LoopingIterator.java",
+   "src/test/java/org/apache/commons/collections4/iterators/LoopingListIteratorTest.java",
+   "src/main/java/org/apache/commons/collections4/ResettableListIterator.java",
+   "src/main/java/org/apache/commons/collections4/iterators/ReverseListIterator.java",
+   "src/main/java/org/apache/commons/collections4/iterators/UnmodifiableListIterator.java",
+   "src/main/java/org/apache/commons/collections4/iterators/SingletonListIterator.java",
+   "src/main/java/org/apache/commons/collections4/iterators/PeekingIterator.java",
+   "src/main/java/org/apache/commons/collections4/iterators/PushbackIterator.java",
+   "src/main/java/org/apache/commons/collections4/iterators/SkippingIterator.java",
+   "src/main/java/org/apache/commons/collections4/IteratorUtils.java"
+  ]
+ },
+ {
+  "id": 18,
+  "repo": "commons-lang",
+  "post": true,
+  "sha": "8065c453",
+  "n_truth": 3,
+  "n_cands": 35,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.6,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.6,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.6666666666666666,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/lang3/JavaVersion.java",
+   "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/SystemUtils.java",
+   "src/test/java/org/apache/commons/lang3/ObjectUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/Functions.java",
+   "src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/reflect/MethodUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/ArrayUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/AbstractLangTest.java",
+   "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java"
+  ]
+ },
+ {
+  "id": 19,
+  "repo": "pdfbox",
+  "post": false,
+  "sha": "95b83d07",
+  "n_truth": 1,
+  "n_cands": 33,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0007457121551081282
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0136986301369863
+  },
+  "ranked": [
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType3CharProc.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDResources.java",
+   "pdfbox/src/test/java/org/apache/pdfbox/pdmodel/font/PDFontTest.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/fontencodingpane/Type3Font.java",
+   "preflight/src/main/java/org/apache/pdfbox/preflight/font/container/Type3Container.java",
+   "debugger/src/main/java/org/apache/pdfbox/debugger/fontencodingpane/FontEncodingPaneController.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java"
+  ]
+ },
+ {
+  "id": 20,
+  "repo": "commons-compress",
+  "post": false,
+  "sha": "d0fd2bc5",
+  "n_truth": 1,
+  "n_cands": 30,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.14285714285714285
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/compress/osgi/OsgiITest.java",
+   "src/test/java/org/apache/commons/compress/osgi/AbstractOsgiITest.java",
+   "src/test/java/org/apache/commons/compress/osgi/Configurations.java",
+   "src/test/java/org/apache/commons/compress/utils/OsgiUtilsTest.java",
+   "src/main/java/org/apache/commons/compress/utils/package-info.java",
+   "src/test/java/org/apache/commons/compress/utils/ServiceLoaderIteratorTest.java",
+   "src/test/java/org/apache/commons/compress/utils/BoundedSeekableByteChannelInputStreamTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/brotli/BrotliUtils.java",
+   "src/test/java/org/apache/commons/compress/archivers/ZipTest.java",
+   "src/test/java/org/apache/commons/compress/archivers/zip/ZipArchiveInputStreamTest.java"
+  ]
+ },
+ {
+  "id": 21,
+  "repo": "commons-io",
+  "post": false,
+  "sha": "dd6266db",
+  "n_truth": 1,
+  "n_cands": 31,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0625
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/io/file/TempDirectory.java",
+   "src/test/java/org/apache/commons/io/file/TempFile.java",
+   "src/test/java/org/apache/commons/io/file/TempFileTest.java",
+   "src/test/java/org/apache/commons/io/file/PathUtilsTest.java",
+   "src/test/java/org/apache/commons/io/FileUtilsTest.java",
+   "src/test/java/org/apache/commons/io/file/PathUtilsDeleteTest.java",
+   "src/main/java/org/apache/commons/io/file/PathUtils.java",
+   "src/test/java/org/apache/commons/io/file/CleaningPathVisitorTest.java",
+   "src/test/java/org/apache/commons/io/file/CopyDirectoryVisitorTest.java",
+   "src/test/java/org/apache/commons/io/file/PathUtilsVisitorTest.java"
+  ]
+ },
+ {
+  "id": 22,
+  "repo": "commons-lang",
+  "post": false,
+  "sha": "f664abb5",
+  "n_truth": 3,
+  "n_cands": 31,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.6,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.4,
+   "R@5": 0.6666666666666666,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.4,
+   "R@5": 0.6666666666666666,
+   "R@10": 0.6666666666666666,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/lang3/JavaVersion.java",
+   "src/test/java/org/apache/commons/lang3/JavaVersionTest.java",
+   "src/test/java/org/apache/commons/lang3/SystemUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/ArchUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/StringUtils.java",
+   "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+   "src/main/java/org/apache/commons/lang3/ArrayUtils.java",
+   "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+   "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+   "src/test/java/org/apache/commons/lang3/exception/ExceptionUtilsTest.java"
+  ]
+ },
+ {
+  "id": 23,
+  "repo": "commons-io",
+  "post": true,
+  "sha": "177dadcb",
+  "n_truth": 1,
+  "n_cands": 28,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.3333333333333333
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/io/monitor/FileEntry.java",
+   "src/test/java/org/apache/commons/io/monitor/FileAlterationObserverTest.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationObserver.java",
+   "src/test/java/org/apache/commons/io/monitor/SerializableFileTimeTest.java",
+   "src/main/java/org/apache/commons/io/monitor/SerializableFileTime.java",
+   "src/test/java/org/apache/commons/io/monitor/FileAlterationMonitorTest.java",
+   "src/test/java/org/apache/commons/io/monitor/AbstractMonitorTest.java",
+   "src/test/java/org/apache/commons/io/monitor/CollectionFileListener.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationListenerAdaptor.java",
+   "src/main/java/org/apache/commons/io/monitor/FileAlterationMonitor.java"
+  ]
+ },
+ {
+  "id": 24,
+  "repo": "commons-io",
+  "post": false,
+  "sha": "1040e74d",
+  "n_truth": 3,
+  "n_cands": 35,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.6,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.3333333333333333,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "combined": {
+   "P@5": 0.4,
+   "R@5": 0.6666666666666666,
+   "R@10": 0.6666666666666666,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/io/input/AutoCloseInputStream.java",
+   "src/test/java/org/apache/commons/io/input/AutoCloseInputStreamTest.java",
+   "src/test/java/org/apache/commons/io/input/ClosedInputStreamTest.java",
+   "src/main/java/org/apache/commons/io/input/CloseShieldInputStream.java",
+   "src/main/java/org/apache/commons/io/input/ProxyInputStream.java",
+   "src/main/java/org/apache/commons/io/output/ClosedOutputStream.java",
+   "src/main/java/org/apache/commons/io/output/CloseShieldOutputStream.java",
+   "src/main/java/org/apache/commons/io/input/CountingInputStream.java",
+   "src/test/java/org/apache/commons/io/input/AbstractInputStreamTest.java",
+   "src/main/java/org/apache/commons/io/IOUtils.java"
+  ]
+ },
+ {
+  "id": 25,
+  "repo": "commons-collections",
+  "post": false,
+  "sha": "399145ae",
+  "n_truth": 5,
+  "n_cands": 32,
+  "ceiling": 0.4,
+  "llm": {
+   "P@5": 0.4,
+   "R@5": 0.4,
+   "R@10": 0.4,
+   "Hit@10": 1.0,
+   "MRR": 0.25
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.2,
+   "Hit@10": 1.0,
+   "MRR": 0.1
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.043478260869565216
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/collections4/map/ReferenceIdentityMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/HashedMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/LRUMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/Flat3MapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/PredicatedMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/TransformedMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/LazySortedMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/SingletonMapTest.java",
+   "src/test/java/org/apache/commons/collections4/map/ConcurrentReferenceHashMapKStrongVSoftTest.java",
+   "src/main/java/org/apache/commons/collections4/map/ReferenceMap.java"
+  ]
+ },
+ {
+  "id": 26,
+  "repo": "pdfbox",
+  "post": true,
+  "sha": "a905346e",
+  "n_truth": 1,
+  "n_cands": 25,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.125
+  },
+  "ranked": [
+   "tools/src/main/java/org/apache/pdfbox/tools/Decrypt.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/PDFSplit.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/PDFMerger.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/ExtractText.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/ExtractImages.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/OverlayPDF.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/PDFToImage.java",
+   "tools/src/main/java/org/apache/pdfbox/tools/TextToPDF.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardProtectionPolicy.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeyProtectionPolicy.java"
+  ]
+ },
+ {
+  "id": 27,
+  "repo": "commons-compress",
+  "post": true,
+  "sha": "1875053b",
+  "n_truth": 5,
+  "n_cands": 35,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.007936507936507936
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.014925373134328358
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/archivers/ArchiveOutputStream.java",
+   "src/main/java/org/apache/commons/compress/compressors/CompressorInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/tar/TarArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/ar/ArArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/cpio/CpioArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/dump/DumpArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/jar/JarArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveOutputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/zip/ZipFile.java"
+  ]
+ },
+ {
+  "id": 28,
+  "repo": "commons-compress",
+  "post": false,
+  "sha": "212e7a28",
+  "n_truth": 4,
+  "n_cands": 36,
+  "ceiling": 0.25,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.07142857142857142
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.25,
+   "Hit@10": 1.0,
+   "MRR": 0.1
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/archivers/zip/ZipArchiveEntry.java",
+   "src/main/java/org/apache/commons/compress/archivers/zip/ZipIoUtil.java",
+   "src/main/java/org/apache/commons/compress/compressors/CompressorException.java",
+   "src/main/java/org/apache/commons/compress/archivers/dump/DumpArchiveException.java",
+   "src/test/java/org/apache/commons/compress/archivers/ExceptionMessageTest.java",
+   "src/main/java/org/apache/commons/compress/utils/IOUtils.java",
+   "src/test/java/org/apache/commons/compress/archivers/ArchiveStreamFactoryTest.java",
+   "src/main/java/org/apache/commons/compress/archivers/zip/ZipSplitOutputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/ArchiveInputStream.java",
+   "src/main/java/org/apache/commons/compress/archivers/sevenz/SevenZFile.java"
+  ]
+ },
+ {
+  "id": 29,
+  "repo": "commons-io",
+  "post": true,
+  "sha": "c3bdb4bc",
+  "n_truth": 1,
+  "n_cands": 32,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0027247956403269754
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.001984126984126984
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/io/IOCaseTest.java",
+   "src/test/java/org/apache/commons/io/RandomAccessFilesTest.java",
+   "src/test/java/org/apache/commons/io/UncheckedIOExceptionsTest.java",
+   "src/test/java/org/apache/commons/io/FileSystemUtilsTest.java",
+   "src/test/java/org/apache/commons/io/ThreadMonitorTest.java",
+   "src/test/java/org/apache/commons/io/DirectoryWalkerTest.java",
+   "src/test/java/org/apache/commons/io/DeleteDirectoryTest.java",
+   "src/test/java/org/apache/commons/io/FileUtilsDeleteDirectoryLinksTest.java",
+   "src/test/java/org/apache/commons/io/IOUtilsWriteTest.java",
+   "src/test/java/org/apache/commons/io/input/UncheckedFilterInputStreamTest.java"
+  ]
+ },
+ {
+  "id": 30,
+  "repo": "pdfbox",
+  "post": false,
+  "sha": "b2839b82",
+  "n_truth": 1,
+  "n_cands": 33,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.001287001287001287
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0010277492291880781
+  },
+  "ranked": [
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSArray.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSBase.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSStream.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSName.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSObject.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSDocument.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSUpdateInfo.java",
+   "pdfbox/src/main/java/org/apache/pdfbox/cos/COSFloat.java"
+  ]
+ },
+ {
+  "id": 31,
+  "repo": "commons-compress",
+  "post": true,
+  "sha": "27412912",
+  "n_truth": 1,
+  "n_cands": 31,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/compress/compressors/CompressorException.java",
+   "src/main/java/org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorOutputStream.java",
+   "src/test/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorOutputStreamTest.java",
+   "src/test/java/org/apache/commons/compress/compressors/lz4/FactoryTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/snappy/SnappyCompressorOutputStream.java",
+   "src/test/java/org/apache/commons/compress/archivers/tar/TarArchiveOutputStreamTest.java",
+   "src/test/java/org/apache/commons/compress/compressors/lz4/BlockLZ4CompressorInputStreamTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/lz77support/LZ77Compressor.java",
+   "src/test/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorRoundtripTest.java",
+   "src/main/java/org/apache/commons/compress/compressors/lz4/FramedLZ4CompressorInputStream.java"
+  ]
+ },
+ {
+  "id": 32,
+  "repo": "commons-io",
+  "post": false,
+  "sha": "eed5803b",
+  "n_truth": 12,
+  "n_cands": 32,
+  "ceiling": 0.5,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.08333333333333333,
+   "Hit@10": 1.0,
+   "MRR": 0.16666666666666666
+  },
+  "co": {
+   "P@5": 0.8,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.4166666666666667,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "combined": {
+   "P@5": 0.4,
+   "R@5": 0.16666666666666666,
+   "R@10": 0.25,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/io/output/LockableFileWriterTest.java",
+   "src/main/java/org/apache/commons/io/output/FileWriterWithEncoding.java",
+   "src/main/java/org/apache/commons/io/output/CloseShieldWriter.java",
+   "src/main/java/org/apache/commons/io/output/StringBuilderWriter.java",
+   "src/main/java/org/apache/commons/io/output/XmlStreamWriter.java",
+   "src/main/java/org/apache/commons/io/output/WriterOutputStream.java",
+   "src/main/java/org/apache/commons/io/output/DeferredFileOutputStream.java",
+   "src/main/java/org/apache/commons/io/output/ThresholdingOutputStream.java",
+   "src/main/java/org/apache/commons/io/output/UncheckedFilterWriter.java",
+   "src/main/java/org/apache/commons/io/output/package-info.java"
+  ]
+ },
+ {
+  "id": 33,
+  "repo": "commons-lang",
+  "post": true,
+  "sha": "1d6ef29c",
+  "n_truth": 1,
+  "n_cands": 33,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/lang3/CharRange.java",
+   "src/test/java/org/apache/commons/lang3/CharSetTest.java",
+   "src/main/java/org/apache/commons/lang3/CharSet.java",
+   "src/main/java/org/apache/commons/lang3/StringUtils.java",
+   "src/test/java/org/apache/commons/lang3/RangeTest.java",
+   "src/main/java/org/apache/commons/lang3/Range.java",
+   "src/test/java/org/apache/commons/lang3/StringUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/ArrayUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/DoubleRangeTest.java",
+   "src/test/java/org/apache/commons/lang3/LongRangeTest.java"
+  ]
+ },
+ {
+  "id": 34,
+  "repo": "commons-collections",
+  "post": true,
+  "sha": "fb2b1645",
+  "n_truth": 3,
+  "n_cands": 28,
+  "ceiling": 0.6666666666666666,
+  "llm": {
+   "P@5": 0.4,
+   "R@5": 0.6666666666666666,
+   "R@10": 0.6666666666666666,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.6666666666666666,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.02702702702702703
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/collections4/bag/AbstractMapBag.java",
+   "src/main/java/org/apache/commons/collections4/multiset/AbstractMultiSet.java",
+   "src/test/java/org/apache/commons/collections4/multiset/AbstractMultiSetTest.java",
+   "src/main/java/org/apache/commons/collections4/multiset/HashMultiSet.java",
+   "src/test/java/org/apache/commons/collections4/multiset/HashMultiSetTest.java",
+   "src/test/java/org/apache/commons/collections4/multiset/TreeMultiSetTest.java",
+   "src/main/java/org/apache/commons/collections4/MultiSet.java",
+   "src/main/java/org/apache/commons/collections4/multiset/AbstractMultiSetDecorator.java",
+   "src/main/java/org/apache/commons/collections4/multiset/PredicatedMultiSet.java",
+   "src/test/java/org/apache/commons/collections4/multiset/PredicatedMultiSetTest.java"
+  ]
+ },
+ {
+  "id": 35,
+  "repo": "commons-collections",
+  "post": true,
+  "sha": "3dbd6861",
+  "n_truth": 9,
+  "n_cands": 32,
+  "ceiling": 0.5555555555555556,
+  "llm": {
+   "P@5": 1.0,
+   "R@5": 0.5555555555555556,
+   "R@10": 0.5555555555555556,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 0.1111111111111111,
+   "R@10": 0.3333333333333333,
+   "Hit@10": 1.0,
+   "MRR": 0.2
+  },
+  "combined": {
+   "P@5": 0.6,
+   "R@5": 0.3333333333333333,
+   "R@10": 0.3333333333333333,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/collections4/set/CompositeSet.java",
+   "src/main/java/org/apache/commons/collections4/collection/CompositeCollection.java",
+   "src/main/java/org/apache/commons/collections4/map/CompositeMap.java",
+   "src/test/java/org/apache/commons/collections4/collection/CompositeCollectionTest.java",
+   "src/test/java/org/apache/commons/collections4/map/CompositeMapTest.java",
+   "src/main/java/org/apache/commons/collections4/CollectionUtils.java",
+   "src/main/java/org/apache/commons/collections4/iterators/IteratorChain.java",
+   "src/test/java/org/apache/commons/collections4/map/AbstractMapTest.java",
+   "src/main/java/org/apache/commons/collections4/ListUtils.java",
+   "src/test/java/org/apache/commons/collections4/CollectionUtilsTest.java"
+  ]
+ },
+ {
+  "id": 36,
+  "repo": "commons-collections",
+  "post": false,
+  "sha": "e42f60b0",
+  "n_truth": 2,
+  "n_cands": 30,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.5,
+   "Hit@10": 1.0,
+   "MRR": 0.1111111111111111
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.1111111111111111
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.021739130434782608
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/collections4/Predicate.java",
+   "src/main/java/org/apache/commons/collections4/Transformer.java",
+   "src/main/java/org/apache/commons/collections4/Closure.java",
+   "src/main/java/org/apache/commons/collections4/functors/AbstractPredicate.java",
+   "src/main/java/org/apache/commons/collections4/PredicateUtils.java",
+   "src/main/java/org/apache/commons/collections4/functors/AllPredicate.java",
+   "src/main/java/org/apache/commons/collections4/functors/AnyPredicate.java",
+   "src/main/java/org/apache/commons/collections4/functors/ChainedClosure.java",
+   "src/main/java/org/apache/commons/collections4/functors/ChainedTransformer.java",
+   "src/main/java/org/apache/commons/collections4/functors/TransformerPredicate.java"
+  ]
+ },
+ {
+  "id": 37,
+  "repo": "commons-lang",
+  "post": false,
+  "sha": "4b08ed57",
+  "n_truth": 1,
+  "n_cands": 36,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.012048192771084338
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.003816793893129771
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/lang3/ArrayUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/StringUtils.java",
+   "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+   "src/main/java/org/apache/commons/lang3/ClassUtils.java",
+   "src/test/java/org/apache/commons/lang3/ArrayUtilsAddTest.java",
+   "src/main/java/org/apache/commons/lang3/text/StrBuilder.java",
+   "src/main/java/org/apache/commons/lang3/BooleanUtils.java",
+   "src/main/java/org/apache/commons/lang3/reflect/MethodUtils.java",
+   "src/main/java/org/apache/commons/lang3/EnumUtils.java",
+   "src/main/java/org/apache/commons/lang3/reflect/ConstructorUtils.java"
+  ]
+ },
+ {
+  "id": 38,
+  "repo": "commons-lang",
+  "post": true,
+  "sha": "e213b85c",
+  "n_truth": 1,
+  "n_cands": 33,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "combined": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 1.0
+  },
+  "ranked": [
+   "src/main/java/org/apache/commons/lang3/math/Fraction.java",
+   "src/test/java/org/apache/commons/lang3/math/FractionReadObjectTest.java",
+   "src/main/java/org/apache/commons/lang3/math/NumberUtils.java",
+   "src/test/java/org/apache/commons/lang3/math/NumberUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/math/package-info.java",
+   "src/main/java/org/apache/commons/lang3/math/IEEE754rUtils.java",
+   "src/test/java/org/apache/commons/lang3/math/IEEE754rUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/ObjectUtils.java",
+   "src/main/java/org/apache/commons/lang3/StringUtils.java",
+   "src/test/java/org/apache/commons/lang3/StringUtilsTest.java"
+  ]
+ },
+ {
+  "id": 39,
+  "repo": "commons-lang",
+  "post": false,
+  "sha": "4e8d9d39",
+  "n_truth": 2,
+  "n_cands": 26,
+  "ceiling": 0.0,
+  "llm": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0
+  },
+  "co": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.004273504273504274
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.0035971223021582736
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/lang3/time/DateUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/time/DateFormatUtilsTest.java",
+   "src/main/java/org/apache/commons/lang3/time/FastDatePrinter.java",
+   "src/main/java/org/apache/commons/lang3/time/CalendarUtils.java",
+   "src/main/java/org/apache/commons/lang3/time/DateFormatUtils.java",
+   "src/test/java/org/apache/commons/lang3/time/FastDateParserTest.java",
+   "src/test/java/org/apache/commons/lang3/time/FastDatePrinterTest.java",
+   "src/test/java/org/apache/commons/lang3/time/CalendarUtilsTest.java",
+   "src/test/java/org/apache/commons/lang3/time/DateUtilsFragmentTest.java",
+   "src/test/java/org/apache/commons/lang3/time/FastDateParserSDFTest.java"
+  ]
+ },
+ {
+  "id": 40,
+  "repo": "commons-lang",
+  "post": false,
+  "sha": "23f08165",
+  "n_truth": 1,
+  "n_cands": 29,
+  "ceiling": 1.0,
+  "llm": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.5
+  },
+  "co": {
+   "P@5": 0.2,
+   "R@5": 1.0,
+   "R@10": 1.0,
+   "Hit@10": 1.0,
+   "MRR": 0.25
+  },
+  "combined": {
+   "P@5": 0.0,
+   "R@5": 0.0,
+   "R@10": 0.0,
+   "Hit@10": 0.0,
+   "MRR": 0.014492753623188406
+  },
+  "ranked": [
+   "src/test/java/org/apache/commons/lang3/tuple/PairTest.java",
+   "src/main/java/org/apache/commons/lang3/tuple/Triple.java",
+   "src/main/java/org/apache/commons/lang3/tuple/ImmutablePair.java",
+   "src/main/java/org/apache/commons/lang3/tuple/MutablePair.java",
+   "src/test/java/org/apache/commons/lang3/tuple/ImmutablePairTest.java",
+   "src/test/java/org/apache/commons/lang3/tuple/MutablePairTest.java",
+   "src/main/java/org/apache/commons/lang3/tuple/ImmutableTriple.java",
+   "src/main/java/org/apache/commons/lang3/tuple/MutableTriple.java",
+   "src/main/java/org/apache/commons/lang3/tuple/package-info.java",
+   "src/test/java/org/apache/commons/lang3/tuple/ImmutableTripleTest.java"
+  ]
+ }
+]

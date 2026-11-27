@@ -1,0 +1,30 @@
+{
+ "repo": "pdfbox",
+ "head_sha": "5b8f299279455a437488cf47ea67139a85a3b75f",
+ "head_date": "2026-11-07",
+ "total_commits": 13761,
+ "java_files_at_head": 1376,
+ "split_boundary_sha": "bebf6b1c2916043d78d597479662d9fccdb06b1b",
+ "split_boundary_date": "2021-01-02",
+ "funnel": {
+  "non_merge_commits": 13761,
+  "test_window_commits": 4129,
+  "touch_java": 3576,
+  "size_2_15_java": 769,
+  "dropped_rename_dominated": 3,
+  "dropped_bulk_subject": 20,
+  "eligible": 746,
+  "sampled_test_commits": 300,
+  "extra_post_cutoff_commits": 50,
+  "train_commits_sampled": 400
+ },
+ "skipped_after_sampling": {
+  "fewer_than_2_pre_existing_files": 51
+ },
+ "unmapped_paths": 0,
+ "train_rows": 100265,
+ "train_positives": 948,
+ "n_instances": 779,
+ "n_commits": 322,
+ "runtime_s": 124.1
+}

@@ -1,0 +1,1 @@
+{"same_package": {"R10_nontest": 0.173, "n_nontest": 6687, "R10_test": 0.167, "n_test": 3605}, "static_plus": {"R10_nontest": 0.172, "n_nontest": 6687, "R10_test": 0.158, "n_test": 3605}, "co_change": {"R10_nontest": 0.395, "n_nontest": 6687, "R10_test": 0.348, "n_test": 3605}, "combined": {"R10_nontest": 0.35, "n_nontest": 6687, "R10_test": 0.341, "n_test": 3605}}

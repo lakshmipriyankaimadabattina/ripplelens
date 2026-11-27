@@ -1,0 +1,5 @@
+commons-io https://github.com/apache/commons-io.git 62b800d801f8474c628096a4df26d4d929dca6d8
+commons-collections https://github.com/apache/commons-collections.git 892bdc8fa734b57f8f7ede3d41e23f8283a95b71
+commons-lang https://github.com/apache/commons-lang.git b9b30efb01e861a16503232bb96b684107e73199
+commons-compress https://github.com/apache/commons-compress.git 56b22afaa550cf11c2ebe2d5f7d0de1f2690a15c
+pdfbox https://github.com/apache/pdfbox.git 5b8f299279455a437488cf47ea67139a85a3b75f

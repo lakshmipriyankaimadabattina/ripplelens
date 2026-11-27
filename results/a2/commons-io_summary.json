@@ -1,0 +1,84 @@
+{
+ "repo": "commons-io",
+ "head_sha": "62b800d801f8474c628096a4df26d4d929dca6d8",
+ "head_date": "2026-10-23",
+ "total_commits": 6363,
+ "java_files_at_head": 582,
+ "split_boundary_sha": "9cf6f6b376efa3058492246087231e39c64d041a",
+ "split_boundary_date": "2023-10-26",
+ "funnel": {
+  "non_merge_commits": 6249,
+  "test_window_commits": 1875,
+  "touch_java": 1161,
+  "size_2_15_java": 409,
+  "dropped_rename_dominated": 1,
+  "dropped_bulk_subject": 7,
+  "eligible": 401,
+  "sampled_test_commits": 300
+ },
+ "skipped_after_sampling": {
+  "fewer_than_2_pre_existing_files": 13
+ },
+ "unmapped_paths": 0,
+ "metrics": {
+  "random": {
+   "P@5": 0.003484320557491289,
+   "R@5": 0.007623812501861282,
+   "F1@5": 0.004037387312648637,
+   "P@10": 0.003484320557491289,
+   "R@10": 0.016186794235574724,
+   "F1@10": 0.004963689850150435,
+   "MRR": 0.02282279621762156,
+   "Effort": 340
+  },
+  "same_package": {
+   "P@5": 0.03554006968641115,
+   "R@5": 0.09012469334768987,
+   "F1@5": 0.04383727963867337,
+   "P@10": 0.03240418118466899,
+   "R@10": 0.1805674000795952,
+   "F1@10": 0.04951859461669637,
+   "MRR": 0.10793051688567415,
+   "Effort": 77
+  },
+  "static": {
+   "P@5": 0.03275261324041812,
+   "R@5": 0.07310716770647084,
+   "F1@5": 0.037120787373751206,
+   "P@10": 0.027177700348432057,
+   "R@10": 0.1239935828786003,
+   "F1@10": 0.039041493316094265,
+   "MRR": 0.1256226823499527,
+   "Effort": 160
+  },
+  "co_change": {
+   "P@5": 0.1505226480836237,
+   "R@5": 0.48166596276352375,
+   "F1@5": 0.2081920669797284,
+   "P@10": 0.09616724738675958,
+   "R@10": 0.5581787647118658,
+   "F1@10": 0.14964416842535508,
+   "MRR": 0.462989960098766,
+   "Effort": 18
+  }
+ },
+ "observations": {
+  "n_eval_commits": 287,
+  "n_true_files": 665,
+  "pct_true_files_reachable_in_import_graph": 68.27067669172932,
+  "pct_true_files_with_prior_cochange_with_seed": 71.8796992481203,
+  "pct_true_files_same_package_as_seed": 58.796992481203006,
+  "pct_true_files_that_are_test_files": 40.75187969924812,
+  "pct_seeds_without_history": 0.0,
+  "pct_commits_with_new_files": 4.529616724738676,
+  "median_candidates": 534,
+  "median_true_set_size": 1,
+  "median_import_distance_when_reachable": 2.0,
+  "wilcoxon_MRR_p": {
+   "co_change_vs_random": 4.335017012397609e-44,
+   "co_change_vs_same_package": 3.0668389853482605e-31,
+   "co_change_vs_static": 1.4699874994327352e-25
+  }
+ },
+ "runtime_s": 4.3
+}
