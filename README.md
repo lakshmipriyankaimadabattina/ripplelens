@@ -42,5 +42,4 @@ The prompt contains the seed path, the commit subject and an alphabetically sort
 ## Known limitations
 Ground truth is "changed in the same commit", not "really affected"; change-type labels are keyword heuristics; all repositories are Apache Java projects.
 
-## License
-Add a license of your choice (for example MIT) before making the repository public.
+
